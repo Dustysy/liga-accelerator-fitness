@@ -24,6 +24,12 @@
   }
 }
 
+// @mixin focus-visible {
+//   &.focus-visible:focus-visible {
+//     @content;
+//   }
+// }
+//
 @mixin hover-focus {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
@@ -46,6 +52,12 @@
 
 @mixin vp-1439 {
   @media (max-width: ($vp-1440 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1365 {
+  @media (max-width: ($vp-1366 - 1px)) {
     @content;
   }
 }
@@ -74,8 +86,23 @@
   }
 }
 
-// Mobile first
+@mixin font-face($fz, $lh, $fz-tablet, $lh-tablet, $fz-mobile, $lh-mobile) {
+  font-size: $fz;
+  line-height: $lh;
 
+  @include vp-1365 {
+    font-size: $fz-tablet;
+    line-height: $lh-tablet;
+  }
+
+  @include vp-767 {
+    font-size: $fz-mobile;
+    line-height: $lh-mobile;
+  }
+}
+
+// Mobile first
+// {
 // @mixin vp-375 {
 //   @media (min-width: $vp-375) {
 //     @content;
@@ -111,7 +138,7 @@
 //     @content;
 //   }
 // }
-
+// }
 // ---------------------------------
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
