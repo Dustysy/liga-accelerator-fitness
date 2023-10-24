@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="theme-color" content="#1C3374">
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
-    <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./img/favicons/apple.png"><!-- 152×152 -->
     <link rel="preload" href="./fonts/alumnisans-extrabold.woff2" as="font">
     <link rel="preload" href="./fonts/alumnisans-semibold.woff2" as="font">
@@ -18,54 +18,47 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="page-header">
+        <div class="container">
+          <a class="page-header__logo-link" href="#">
+            <img class="page-header__logo-img" src="./img/logo.svg" width="120" height="26" alt="SuperGym logo">
+          </a>
+
+          <a class="page-header__phone" href="tel:88005555555">8-800-555-55-55</a>
+        </div>
       </header>
+
       <main>
         <section class="intro">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="intro__info-container">
+              <span class="intro__city">Омск</span>
+              <h1 class="intro__title">Фитнес Центр</h1>
+
+              <ul class="intro__list">
+                <li class="intro__list-item">Тренажёрный зал</li>
+                <li class="intro__list-item">Групповые занятия</li>
+                <li class="intro__list-item">Кардио-зона</li>
+              </ul>
+
+              <button class="btn" type="button">Купить абонемент</button>
+            </div>
+            <picture>
+              <source type="image/webp" media="(max-width:1365px)" srcset=".webp 1x, @2x.webp 2x">
+              <source type="image/jpg" media="(max-width:1365px)" srcset=".png 1x, @2x.png 2x">
+              <source type="image/webp" media="(max-width:767px)" srcset=".webp 1x, @2x.webp 2x">
+              <source type="image/jpg" media="(max-width:767px)" srcset=".png 1x, @2x.png 2x">
+              <source type="image/webp" srcset=".webp 1x, .webp 2x">
+              <img class="intro__image" src="" width="500" height="524" alt="Подтянутый мужчина в футболке Супермена стоит в слабоосвещенном помещении и смотрит на луч света">
+            </picture>
           </div>
         </section>
       </main>
+
       <footer>
         <div class="container"></div>
       </footer>
     </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
