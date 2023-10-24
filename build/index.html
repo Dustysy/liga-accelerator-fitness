@@ -58,7 +58,7 @@
           <div class="container">
             <div class="fitness__info-container">
               <h2 class="fitness__title">Тренажерный зал</h2>
-              <h6 class="fitness__postcript">Просторный зал площадью 900 кв/м</h6>
+              <h6 class="fitness__postscript">Просторный зал площадью 900 кв/м</h6>
 
               <p class="fitness__text">
                 Supergym – самый большой фитнес центр за Уралом
@@ -87,6 +87,129 @@
           </div>
         </section>
 
+        <section class="subscription">
+          <div class="container">
+            <h3 class="subscription__title">Абонементы</h3>
+            <ul class="subscription__period-pagination period-pagination">
+              <li class="period-pagination__item period-pagination__item--current">
+                <button class="period-pagination__button" type="button">1 месяц</button>
+              </li>
+
+              <li class="period-pagination__item">
+                <button class="period-pagination__button" type="button">6 месяцев</button>
+              </li>
+              
+              <li class="period-pagination__item">
+                <button class="period-pagination__button" type="button">12 месяцев</button>
+
+              </li>
+            </ul>
+
+            <ul class="subscription__price-list price-list price-list--1month">
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title">С тренером</h4>
+                <span class="price-card__postscript">12 занятий</span>
+
+                <span class="price-card__price price-card__price--back">5000</span> <!--Добавляет в разметку, а не псевдоэлементом для удобства применениня стилей и постпродакшена-->
+                <p class="price-card__price">5000</p>
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title">Дневной</h4>
+                <span class="price-card__postscript">с 8:00 до 17:00 </span>
+
+                <span class="price-card__price price-card__price--back">1700</span> <!--Добавляет в разметку, а не псевдоэлементом для удобства применениня стилей и постпродакшена-->
+                <p class="price-card__price">1700</p>
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title">Полный день</h4>
+                <span class="price-card__postscript">с 8:00 до 22:00 </span>
+
+                <span class="price-card__price price-card__price--back">2700</span> <!--Добавляет в разметку, а не псевдоэлементом для удобства применениня стилей и постпродакшена-->
+                <p class="price-card__price">2700</p>
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+            </ul>
+
+            <!-- <ul class="subscription__price-list price-list price-list--6month">
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title"></h4>
+                <span class="price-card__postscript"></span>
+
+                <span class="price-card__price price-card__price--back"></span> 
+                <p class="price-card__price"></p>
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title"></h4>
+                <span class="price-card__postscript"></span>
+
+                <span class="price-card__price price-card__price--back"></span> 
+                <p class="price-card__price"></p>
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title"></h4>
+                <span class="price-card__postscript"></span>
+
+                <span class="price-card__price price-card__price--back"></span> 
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+            </ul>
+
+            <ul class="subscription__price-list price-list price-list--12month">
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title"></h4>
+                <span class="price-card__postscript"></span>
+
+                <span class="price-card__price price-card__price--back"></span>
+                <p class="price-card__price"></p>
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title"></h4>
+                <span class="price-card__postscript"></span>
+
+                <span class="price-card__price price-card__price--back"></span>
+                <p class="price-card__price"></p>
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+
+              <li class="subscription__price__item price-card">
+                <h4 class="price-card__title"></h4>
+                <span class="price-card__postscript"></span>
+
+                <span class="price-card__price price-card__price--back"></span>
+                <p class="price-card__price"></p>
+
+                <button class="price-card__button" type="button">Купить абонемент</button>
+              </li>
+            </ul> -->
+          
+            <picture>
+              <source type="image/webp" media="(max-width:1365px)" srcset=".webp 1x, @2x.webp 2x">
+              <source type="image/jpg" media="(max-width:1365px)" srcset=".png 1x, @2x.png 2x">
+              <source type="image/webp" media="(max-width:767px)" srcset=".webp 1x, @2x.webp 2x">
+              <source type="image/jpg" media="(max-width:767px)" srcset=".png 1x, @2x.png 2x">
+              <source type="image/webp" srcset=".webp 1x, .webp 2x">
+              <img class="subscription__image" src="" width="321" height="384" alt="Тренажёрные блины розового цвета 35кг">
+            </picture>
+          </div>
+        </section>
       </main>
 
       <footer>
