@@ -1387,8 +1387,12 @@ button,
   height: fit-content;
 }
 
+.hero img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (max-width: 767px) {
-  .hero__image {
+  .hero img {
     display: none;
   }
 }
@@ -1453,10 +1457,12 @@ button,
   background-color: #ffffff;
 }
 
-.subscription__image {
+.subscription img {
   position: absolute;
   bottom: -149.5px;
   right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* @mixin hover-focus {

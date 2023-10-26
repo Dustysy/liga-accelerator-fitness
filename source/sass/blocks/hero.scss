@@ -56,7 +56,9 @@
   height: fit-content;
 }
 
-.hero__image {
+.hero img {
+  object-fit: cover;
+  
   @include vp-767 {
     display: none;
   }

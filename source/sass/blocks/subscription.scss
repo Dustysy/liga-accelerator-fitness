@@ -39,8 +39,10 @@
   background-color: $color-default-white;
 }
 
-.subscription__image {
+.subscription img {
   position: absolute;
   bottom: -149.5px;
   right: 0;
+
+  object-fit: cover;
 }
