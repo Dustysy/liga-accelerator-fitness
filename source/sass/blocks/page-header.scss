@@ -1,0 +1,24 @@
+.page-header {
+  width: 100%;
+  padding: 30px 0;
+
+  background: $intro-background;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+// .page-header__logo-link {
+
+// }
+
+// .page-header__logo-img {
+
+// }
+
+.page-header__phone {
+  @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
+  color: $color-default-white;
+}
