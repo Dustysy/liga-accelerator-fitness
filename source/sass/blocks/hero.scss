@@ -13,7 +13,6 @@
   display: grid;
   grid-template-columns: max-content auto;
   justify-items: end;
-  align-items: center;
   gap: 0 2px;
   margin: 0 5.8% 0 0; //check PP 70px
   padding: 62px 0;
@@ -42,6 +41,7 @@
 
 .hero__list {
   grid-column: 1/2;
+  align-self: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -53,6 +53,7 @@
 
 .hero__button {
   grid-column: 2/3;
+  height: fit-content;
 }
 
 .hero__image {

@@ -330,6 +330,13 @@ template {
 }
 @font-face {
   font-style: normal;
+  font-weight: 300;
+  font-family: "Roboto Condensed";
+  font-display: swap;
+  src: url("../fonts/robotocondensed-light.woff2") format("woff2");
+}
+@font-face {
+  font-style: normal;
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
@@ -1120,6 +1127,116 @@ button,
   color: #15ab07;
 }
 
+.period-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+}
+
+.period-pagination__button {
+  padding: 14px 0;
+  background-color: transparent;
+  color: rgba(16, 38, 84, 0.5);
+  border: none;
+  cursor: pointer;
+}
+.period-pagination__button--current {
+  color: #102654;
+  border-bottom: 2px solid #D10A42;
+}
+
+.price-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 65px 77px 65px 78px;
+}
+
+.price-card__title {
+  margin: 0 0 11px;
+  font-size: 26px;
+  line-height: 26px;
+}
+@media (max-width: 1365px) {
+  .price-card__title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .price-card__title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.price-card__postscript {
+  margin: 0 0 12px;
+  font-weight: 300;
+}
+
+.price-card__price {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  margin: 0;
+  font-size: 60px;
+  line-height: 150%;
+  color: #103AAE;
+}
+@media (max-width: 1365px) {
+  .price-card__price {
+    font-size: 60px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 767px) {
+  .price-card__price {
+    font-size: 48px;
+    line-height: 150%;
+  }
+}
+.price-card__price--back {
+  position: relative;
+  margin: 35px 0;
+  font-size: 100px;
+  line-height: 150%;
+  font-weight: 700;
+  color: #e8e8e8;
+}
+@media (max-width: 1365px) {
+  .price-card__price--back {
+    font-size: 100px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 767px) {
+  .price-card__price--back {
+    font-size: 80px;
+    line-height: 150%;
+  }
+}
+
+.price-card__button {
+  color: #102654;
+  border: 2px solid #102654;
+}
+
 .page-header {
   width: 100%;
   padding: 30px 0;
@@ -1177,9 +1294,6 @@ button,
   grid-template-columns: -webkit-max-content auto;
   grid-template-columns: max-content auto;
   justify-items: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 0 2px;
   margin: 0 5.8% 0 0;
   padding: 62px 0;
@@ -1240,6 +1354,8 @@ button,
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
+  -ms-grid-row-align: center;
+      align-self: center;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1266,12 +1382,81 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 @media (max-width: 767px) {
   .hero__image {
     display: none;
   }
+}
+
+.subscription {
+  background-color: #F8F9FC;
+  color: #102654;
+}
+
+.subscription__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px 103px;
+}
+
+.subscription__title {
+  margin: 0 0 24px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-size: 54px;
+  line-height: 54px;
+  letter-spacing: 0.03px;
+  font-weight: 600;
+}
+@media (max-width: 1365px) {
+  .subscription__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+@media (max-width: 767px) {
+  .subscription__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.subscription__period-pagination {
+  margin: 0 0 37px;
+}
+
+.subscription__price-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.subscription__price-item {
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.subscription__image {
+  position: absolute;
+  bottom: -149.5px;
+  right: 0;
 }
 
 /* @mixin hover-focus {

@@ -86,11 +86,11 @@
 
         <!-- SUBSCRIPTION -->
         <section class="subscription">
-          <div class="container">
-            <h3 class="subscription__title">Абонементы</h3>
+          <div class="subscription__container container">
+            <h2 class="subscription__title">Абонементы</h2>
             <ul class="subscription__period-pagination period-pagination">
-              <li class="period-pagination__item period-pagination__item--current">
-                <button class="period-pagination__button" type="button">1 месяц</button>
+              <li class="period-pagination__item">
+                <button class="period-pagination__button period-pagination__button--current" type="button">1 месяц</button>
               </li>
 
               <li class="period-pagination__item">
@@ -103,98 +103,110 @@
               </li>
             </ul>
 
-            <ul class="subscription__price-list price-list price-list--1month">
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title">С тренером</h4>
+            <ul class="subscription__price-list subscription__price-list--1month">
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title">С тренером</h3>
                 <span class="price-card__postscript">12 занятий</span>
 
-                <span class="price-card__price price-card__price--back">5000</span> <!--Добавляет в разметку, а не псевдоэлементом для удобства применениня стилей и постпродакшена-->
-                <p class="price-card__price">5000</p>
+                <!--Добавляет в разметку, а не псевдоэлементом для удобства применениня стилей и постпродакшена-->
+                <span class="price-card__price price-card__price--back">5000
+                  <p class="price-card__price price-card__price">5000</p>
+                </span>
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
 
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title">Дневной</h4>
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title">Дневной</h3>
                 <span class="price-card__postscript">с 8:00 до 17:00 </span>
 
-                <span class="price-card__price price-card__price--back">1700</span> <!--Добавляет в разметку, а не псевдоэлементом для удобства применениня стилей и постпродакшена-->
-                <p class="price-card__price">1700</p>
+                <span class="price-card__price price-card__price--back">1700
+                  <p class="price-card__price">1700</p>
+                </span>
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
 
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title">Полный день</h4>
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title">Полный день</h3>
                 <span class="price-card__postscript">с 8:00 до 22:00 </span>
 
-                <span class="price-card__price price-card__price--back">2700</span> <!--Добавляет в разметку, а не псевдоэлементом для удобства применениня стилей и постпродакшена-->
-                <p class="price-card__price">2700</p>
+                <span class="price-card__price price-card__price--back">2700
+                  <p class="price-card__price">2700</p>
+                </span> 
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
             </ul>
 
-            <!-- <ul class="subscription__price-list price-list price-list--6month">
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title"></h4>
+            <!-- <ul class="subscription__price-list subscription__price-list--6month">
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title"></h3>
                 <span class="price-card__postscript"></span>
 
-                <span class="price-card__price price-card__price--back"></span> 
-                <p class="price-card__price"></p>
+                <span class="price-card__price price-card__price--back">
+                  <p class="price-card__price"></p>
+                </span>
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
 
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title"></h4>
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title"></h3>
                 <span class="price-card__postscript"></span>
 
-                <span class="price-card__price price-card__price--back"></span> 
-                <p class="price-card__price"></p>
+                <span class="price-card__price price-card__price--back">
+                  <p class="price-card__price"></p>
+                </span> 
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
 
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title"></h4>
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title"></h3>
                 <span class="price-card__postscript"></span>
 
-                <span class="price-card__price price-card__price--back"></span> 
+                <span class="price-card__price price-card__price--back">
+                  <p class="price-card__price"></p>
+                </span> 
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
             </ul>
 
-            <ul class="subscription__price-list price-list price-list--12month">
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title"></h4>
+            <ul class="subscription__price-list subscription__price-list--12month">
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title"></h3>
                 <span class="price-card__postscript"></span>
 
-                <span class="price-card__price price-card__price--back"></span>
-                <p class="price-card__price"></p>
+                <span class="price-card__price price-card__price--back">
+                  <p class="price-card__price"></p>
+                </span>
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
 
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title"></h4>
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title"></h3>
                 <span class="price-card__postscript"></span>
 
-                <span class="price-card__price price-card__price--back"></span>
-                <p class="price-card__price"></p>
+                <span class="price-card__price price-card__price--back">
+                  <p class="price-card__price"></p>
+                </span>
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
 
-              <li class="subscription__price__item price-card">
-                <h4 class="price-card__title"></h4>
+              <li class="subscription__price-item price-card">
+                <h3 class="price-card__title"></h3>
                 <span class="price-card__postscript"></span>
 
-                <span class="price-card__price price-card__price--back"></span>
-                <p class="price-card__price"></p>
+                <span class="price-card__price price-card__price--back">
+                  <p class="price-card__price"></p>
+                </span>
 
-                <button class="price-card__button" type="button">Купить абонемент</button>
+                <button class="price-card__button btn" type="button">Купить абонемент</button>
               </li>
             </ul> -->
           
