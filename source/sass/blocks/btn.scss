@@ -1,17 +1,27 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 27px 56px;
 
+  font-family: $ff-roboto-condensed;
+  font-size: $fz-btn-desktop-medium;
+  line-height: $lh-btn-desktop-medium;
+  font-weight: 700;
+  letter-spacing: 5%;
   color: $color-default-white;
+  text-transform: uppercase;
 
-  background-color: $color-neon-blue;
+  background-color: $trans-default;
   border: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
+  // transition: opacity $trans-default;
 
   &--red {
     background-color: $color-torch-red;
+  }
+
+  &--subscription {
+    padding: 27px 44px;
   }
 
   &:disabled {
