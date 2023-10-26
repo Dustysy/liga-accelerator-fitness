@@ -480,9 +480,23 @@
 
         <div class="pre-footer-wrapper">
           <!-- FORM -->
-          <section class="">
+          <section class="free-lesson">
             <div class="container">
-              
+              <h2 class="free-lesson__title">Бесплатное занятие</h2>
+
+              <form class="free-lesson__form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="free-lesson__label">
+                  <span class="visually-hidden">Введите имя</span>
+                  <input class="free-lesson__name" type="text" name="name" placeholder="Имя" required>
+                </label>
+
+                <label class="free-lesson__label">
+                  <span class="visually-hidden">Введите номер телефона</span>
+                  <input class="free-lesson__number" type="number" name="phone" placeholder="Телефон" required>
+                </label>
+
+                <button class="btn" type="submit">Отправить</button>
+              </form>
             </div>
           </section>
 
