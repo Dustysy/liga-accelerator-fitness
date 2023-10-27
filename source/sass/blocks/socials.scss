@@ -1,0 +1,22 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__item {
+  padding: 1.5px 1.5px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 25px;
+  min-height: 25px;
+}
