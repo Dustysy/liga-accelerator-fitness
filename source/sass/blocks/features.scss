@@ -1,0 +1,115 @@
+.features {
+  background-color: $color-ghost-white;
+  color: $color-sapphire;
+
+  h2 {
+    margin: 0 0 54px;
+  
+    font-family: $ff-alumni-sans;
+    @include font-face(54px, 54px, 42px, 42px, 32px, 32px);
+    letter-spacing: 0.03px; //change in PP
+    font-weight: 600;
+  }
+
+  // div {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+  span {
+    &:first-child {
+      grid-row: 1/span 2;
+      @include font-face(70px,70px, 70px, 70px, 64px, 64px);
+      font-weight: 700;
+      background: $crimson-to-cobalt-top-right;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    grid-column: 1/2;
+    @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
+    font-weight: 400;
+  }
+
+  h3 {
+    grid-column: 2/3; 
+    margin: 0 0 8px;
+
+    @include font-face(22px, 22px, 20px, 20px, 18px, 20px);
+    font-weight: 400;
+  }
+
+  p {
+    grid-column: 2/3;
+    grid-row: 2/span 2;
+    margin: 0;
+  }
+
+  ul {
+    display: grid;
+    grid-auto-flow:dense;
+    grid-template-columns: 1fr 21% 1fr; //change PP
+    gap: 152px 60px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: grid;
+    grid-auto-flow:dense;
+    grid-template-columns: max-content 1fr; //change PP
+    grid-template-rows: min-content max-content max-content;
+    gap: 0 30px;
+
+    &:nth-child(2n - 1) {
+      grid-column: 1/2;
+    }
+    
+    &:nth-child(2n) {
+      grid-column: 3/4;
+    }
+
+    &:nth-child(5n) {
+      grid-column: 2/3;
+      grid-row: auto/span 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 4px 0 0;
+      padding: 70px 34px 86px;
+
+      background-color: $color-resolution-blue;
+      color: $color-default-white;
+      text-align: center;
+
+      span {
+        &:first-child {
+          margin: 0 0 12px;
+
+          @include font-face(70px,70px, 70px, 70px, 64px, 64px);
+          background: $color-default-white;
+          background-clip: text;
+        }
+        @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
+        margin: 0 0 42px;
+      }
+    
+      h3 {
+        display: none;
+      }
+    
+      // p {
+        
+      // }
+    }
+  }
+
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

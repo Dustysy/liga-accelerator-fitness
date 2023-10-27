@@ -1,0 +1,47 @@
+.fitness {
+  color: $color-sapphire;
+
+  h2 {
+    margin: 0 0 25px;
+  
+    font-family: $ff-alumni-sans;
+    @include font-face(54px, 54px, 42px, 42px, 32px, 32px);
+    letter-spacing: 0.03px; //change in PP
+    font-weight: 600;
+  }
+
+  span {
+    display: block;
+    margin: 0 0 95px;
+
+    @include font-face(22px, 22px, 20px, 20px, 18px, 20px);
+    font-weight: 400;
+  }
+
+  p {
+    margin: 0 0 8px;
+    font-weight: 300;
+  }
+
+  img {
+    // width: 100%;
+    object-fit: cover;
+  }
+}
+
+.fitness__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fitness__info-container {
+  width: 33.33%;
+  margin: 0 145px 0 0;
+}
+
+.fitness__video-container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

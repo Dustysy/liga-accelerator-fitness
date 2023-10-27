@@ -12,7 +12,6 @@
 .hero__info-container {
   display: grid;
   grid-template-columns: max-content auto;
-  justify-items: end;
   gap: 0 2px;
   margin: 0 5.8% 0 0; //check PP 70px
   padding: 62px 0;
@@ -53,10 +52,12 @@
 
 .hero__button {
   grid-column: 2/3;
+  justify-self: end;
   height: fit-content;
 }
 
 .hero img {
+  // width: 100%;
   object-fit: cover;
   
   @include vp-767 {
