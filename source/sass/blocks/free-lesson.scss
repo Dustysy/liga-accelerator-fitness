@@ -1,0 +1,50 @@
+.free-lesson {
+  display: inline-block;
+
+  background-color: $color-sapphire;
+  color: $color-default-white;
+}
+
+.free-lesson__container {
+  padding: 60px 103px;
+}
+
+.free-lesson__title {
+  margin: 0 0 33px;
+
+  font-family: $ff-alumni-sans;
+  @include font-face(54px, 54px, 42px, 42px, 32px, 32px);
+  letter-spacing: 0.03px; //change in PP
+  font-weight: 600;
+}
+
+.free-lesson label {
+  display: inline-block;
+  margin: 0 0 28px;
+
+  &:not(:last-child) {
+    margin: 0 30px 28px 0;
+  }
+}
+
+.free-lesson input {
+  padding: 0 0 4px;
+
+  @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
+  font-weight: 400;
+  color: $color-default-white;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #74819c;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.free-lesson__button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
