@@ -38,8 +38,10 @@
 // }
 
 .page-footer__logo-link {
-  width: 100px;
-  height: 15px;
+  @include font-face(24px, 24px, 22px, 22px, 20px, 20px);
+  font-weight: 400;
+  color: $color-default-white;
+  text-transform: uppercase;
 }
 
 .page-footer__link {
