@@ -1,11 +1,24 @@
 .contacts {
-  display: inline-block;
+  display: inline-flex;
+  width: 50%;
 
   color: $color-sapphire;
+
+  @include vp-1365 {
+    width: 100%;
+  }
 }
 
 .contacts__container {
   padding: 60px 103px;
+
+  @include vp-1365 {
+    padding: 100px 133px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
 }
 
 .contacts__title {
@@ -25,6 +38,7 @@
   grid-auto-flow: dense;
   grid-template-columns: 1fr 1fr;
   gap: 15px 120px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -39,6 +53,16 @@
     height: 100%;
 
     background-color: #74819C;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
