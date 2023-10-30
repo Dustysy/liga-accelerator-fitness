@@ -11,13 +11,10 @@
   padding: 0 103px;
 }
 
-// .page-header__logo-link {
-
-// }
-
-// .page-header img {
-
-// }
+.page-header img {
+  width: 120px;
+  height: 26px;
+}
 
 .page-header__phone {
   @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
