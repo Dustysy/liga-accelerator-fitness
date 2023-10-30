@@ -2,6 +2,18 @@
   color: $color-resolution-blue;
 }
 
+.offers__container {
+  padding: 120px 103px;
+
+  @include vp-1365 {
+    padding: 100px 45px;
+  }
+
+  @include vp-767 {
+    padding: 70px 15px;
+  }
+}
+
 .offers h2 {
   margin: 0 0 70px;
 
@@ -11,6 +23,14 @@
   font-weight: 600;
   color: $color-sapphire;
   text-align: center;
+
+  @include vp-1365 {
+    margin: 0 0 40px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 42px;
+  }
 }
 
 .offers ul{
@@ -21,6 +41,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+  }
 }
 
 .offers h3{
@@ -35,6 +65,9 @@
 }
 
 .offers a {
+  display: flex;
+  width: 79px;
+  margin: auto 0 0;
   padding: 0 0 4px;
 
   font-size: $fz-btn-desktop-large;
@@ -45,48 +78,86 @@
   text-transform: uppercase;
 
   border-bottom: 1px solid $color-resolution-blue;
+
+  @include vp-767 {
+    margin: auto;
+  }
 }
 
 .offers li{
-  // min-height: 211px;
+  min-height: 211px;
   padding: 30px 35px;
 
   border: 7px solid transparent;
   border-image: $crimson-to-cobalt-top-right;
   border-image-slice: 1;
 
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   &:not(:nth-child(3n+1)) {
     grid-column: 2/3;
+
+    @include vp-1365 {
+      grid-column: unset;
+    }
   }
 
   &:nth-child(3n+1) {
     grid-row: span 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 0 0 45px;
+    display: flex;
+    padding: 0;
 
     color: $color-default-white;
     background-color: $color-torch-red;
     border: none;
 
-    h3 {
-      margin: 40px 0 0;
+    @include vp-1365 {
+      grid-template-columns: 33% 66.66%;
+      grid-column: 1/span 2;
+    }
+    
+    @include vp-767 {
     }
 
-    span {
-      margin: 0 0 25px;
-      @include font-face(70px,70px, 70px, 70px, 64px, 64px);
-      font-weight: 700;
-    }
+    .offers__info-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding:  40px 45px 45px;
 
-    p {
-      @include font-face(18px, 24px, 18px, 24px, 16px, 20px)
-    }
+      h3 {
+        margin: 0 0 15px;
 
-    a {
-      margin: 0 0 45px;
-      color: $color-default-white;
-      border-color: $color-default-white;
+        @include vp-1365 {
+          margin: 0 0 5px;
+        }
+
+        @include vp-767 {
+          margin: 0 0 9px;
+        }
+      }
+
+      span {
+        margin: 0 0 25px;
+        @include font-face(70px,70px, 70px, 70px, 64px, 64px);
+        font-weight: 700;
+
+        @include vp-1365 {
+          margin: 0 0 20px;
+        }
+      }
+
+      p {
+        @include font-face(18px, 24px, 18px, 24px, 16px, 20px)
+      }
+
+      a {
+        color: $color-default-white;
+        border-color: $color-default-white;
+      }
     }
 
     picture,
@@ -95,7 +166,6 @@
       grid-row: 1/ span 4;
       width: 100%;
       height: 100%;
-      margin: 0 0 0 45px;
       object-fit: cover;
     }
   }

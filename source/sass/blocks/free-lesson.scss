@@ -11,9 +11,12 @@
 }
 
 .free-lesson__container {
+  max-width: 960px;
+  margin: 0 0 0 auto;
   padding: 60px 103px;
 
   @include vp-1365 {
+    margin: 0 auto;
     padding: 100px 133px;
   }
 
