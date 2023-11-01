@@ -3,6 +3,14 @@
   flex-direction: column;
   align-items: center;
   padding: 65px 77px 65px 78px;
+
+  @include vp-1365 {
+    padding: 65px 118px;
+  }
+
+  @include vp-767 {
+    padding: 50px 42px;
+  }
 }
 
 .price-card__title {
@@ -17,11 +25,23 @@
   font-weight: 300;
 }
 
-.price-card__price {
+.price-card__price-wrapper {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translate(-50%);
+
+  display: flex;
+  gap: 0 14px;
+  align-items: baseline;
+  align-items: end;
+
+  @include vp-767 {
+    gap: 0 10px;
+  }
+}
+
+.price-card__price {
   margin: 0;
 
   @include font-face(60px, 150%, 60px, 150%, 48px, 150%);
@@ -30,6 +50,7 @@
   &--back {
     position: relative;
     margin: 35px 0;
+    padding: 0;
 
     @include font-face(100px, 150%, 100px, 150%, 80px, 150%);
     font-weight: 700;
@@ -37,7 +58,23 @@
   }
 }
 
+.price-card__price .rouble {
+  font-size: 60px;
+  line-height: 60px;
+  align-self: flex-start;
+  margin: 24px 0;
+  color: $color-sapphire;
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 20px 0 19px;
+  }
+}
+
 .price-card__button {
+  padding: 25px 42px;
+
   color: $color-sapphire;
   border: 2px solid $color-sapphire;
 }
