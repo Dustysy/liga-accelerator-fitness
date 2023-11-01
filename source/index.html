@@ -460,36 +460,45 @@
 
         <!-- REVIEWS -->
         <section class="reviews">
-          <div class="container">
-            <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__container container">
+            <h2>Отзывы</h2>
 
-            <button class="reviews__pagination-button reviews__pagination-button--prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
+            <div class="reviews__content-wrapper">
+              <button class="reviews__pagination-button reviews__pagination-button--prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
 
-            <ul class="reviews__list">
-              <li class="reviews__item">
-                <picture>
-                  <source type="image/webp" srcset="./img/reviewer-1.webp 1x, ./img/reviewer-1.webp 2x">
-                  <img src="./img/reviewer-1.jpg" srcset="./img/reviewer-1@2x.jpg 2x" width="80" height="80" alt="">
-                </picture>
+                <svg width="16" height="32">
+                  <use href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
 
-                <div class="reviews__text-wrapper">
-                  <h3 class="reviews__name">Анна Орлова</h3>
-                  <p class="reviews__text">
-                    «Хожу в Supergym уже больше года. Нравится, что
-                    в клубе всегда чисто, тренажеры обновляют,
-                    персонал дружелюбный. Зал просторный, даже в
-                    вечернее время нет очередей»
-                  </p>
-                </div>
-              </li>
-            </ul>
+              <ul>
+                <li>
+                  <picture>
+                    <source type="image/webp" srcset="./img/reviewer-1.webp 1x, ./img/reviewer-1.webp 2x">
+                    <img src="./img/reviewer-1.jpg" srcset="./img/reviewer-1@2x.jpg 2x" width="80" height="80" alt="">
+                  </picture>
 
-            <button class="reviews__pagination-button reviews__pagination-button--next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
+                  <div class="reviews__text-wrapper">
+                    <h3>Анна Орлова</h3>
+                    <p>
+                      «Хожу в Supergym уже больше года. Нравится, что
+                      в клубе всегда чисто, тренажеры обновляют,
+                      персонал дружелюбный. Зал просторный, даже в
+                      вечернее время нет очередей»
+                    </p>
+                  </div>
+                </li>
+              </ul>
 
+              <button class="reviews__pagination-button reviews__pagination-button--next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+
+                <svg width="16" height="32">
+                  <use href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </section>
 
