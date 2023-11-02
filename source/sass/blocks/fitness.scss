@@ -5,6 +5,18 @@
 .fitness__container {
   display: flex;
   flex-wrap: wrap;
+
+  @include vp-1365 {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 45px;
+
+    text-align: center;
+  }
+
+  @include vp-767 {
+    padding: 70px 0;
+  }
 }
 
 .fitness h2 {
@@ -31,6 +43,17 @@
 .fitness__info-container {
   width: 33.33%;
   margin: 0 145px 0 0;
+
+  @include vp-1365 {
+    width: 100%;
+    margin: 0 0 36px;
+    padding: 0 133px;
+  }
+
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 
@@ -40,15 +63,37 @@
 
   @include font-face(22px, 22px, 20px, 20px, 18px, 20px);
   font-weight: 400;
+
+  @include vp-1365 {
+    margin: 0 0 36px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 40px;
+  }
 }
 
 .fitness p {
   margin: 0 0 8px;
   font-weight: 300;
+
+  @include vp-1365 {
+    &:last-child {
+      display: none;
+    }
+  }
 }
 
 .fitness img {
   object-fit: cover;
+
+  @include vp-1365 {
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    margin: 0 0 40px;
+  }
 }
 
 .fitness__video-container {
@@ -56,26 +101,21 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
 
-/*
-.video {
-  width: 364px;
-  height: 228px;
-
-  img {
-    position: absolute;
-    z-index: 1;
-
-    background-color: rgba(20, 54, 122, 0.50);
+  @include vp-1365 {
+    left: 0;
+    transform: translateY(-50%);
+    max-width: 100%;
   }
 
-  iframe {
-    display: none;
+  @include vp-767 {
+    position: static;
+    transform: translateY(0);
+    width: 100%;
+    padding: 0;
+
+    img {
+      margin: 0;
+    }
   }
 }
-
-// .video__play-button {
-
-// }
-*/
