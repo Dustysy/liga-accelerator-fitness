@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 27px 56px;
+  padding: 25px 54px;
 
   font-family: $ff-roboto-condensed;
   font-size: $fz-btn-desktop-medium;
@@ -16,6 +16,7 @@
 
   &--red {
     background-color: $color-torch-red;
+    border: 2px solid $color-default-white;
   }
 
   &:disabled {
@@ -26,5 +27,9 @@
 
   @include hover-focus {
     opacity: 0.8;
+  }
+
+  @include vp-1365 {
+    padding: 20px 32px;
   }
 }
