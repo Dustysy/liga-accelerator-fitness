@@ -1,5 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {initSwiperJury} from './modules/init-jury-swiper';
+import { initSwiperReview } from './modules/init-review-swiper';
 
 // ---------------------------------
 
@@ -19,6 +21,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    initSwiperJury();
+    initSwiperReview();
   });
 });
 

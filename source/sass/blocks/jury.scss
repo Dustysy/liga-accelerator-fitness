@@ -42,17 +42,7 @@
   transform: translateY(-50%);
 }
 
-.jury__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px 40px;
-  margin: 0 40px;
-  padding: 0;
-  list-style: none;
-
-  color: $color-default-white;
-
+.jury__swiper {
   @include vp-1365 {
     margin: 0 33px;
   }
@@ -60,6 +50,13 @@
   @include vp-767 {
     margin: 0 19px;
   }
+}
+
+.jury__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: $color-default-white;
 }
 
 .jury__item {
@@ -86,6 +83,12 @@
       display: flex;
     }
   }
+}
+
+.jury__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .jury__info-wrapper {

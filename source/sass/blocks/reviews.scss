@@ -46,7 +46,7 @@
   transform: translateY(-50%);
 }
 
-.reviews ul {
+.reviews__content-wrapper ul {
   margin: 0 40px;
   padding: 0;
   list-style: none;
@@ -62,7 +62,7 @@
   }
 }
 
-.reviews li {
+.reviews__content-wrapper li {
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 0 30px;
@@ -84,7 +84,7 @@
   }
 }
 
-.reviews img {
+.reviews__content-wrapper img {
   grid-row: 1/span 2;
   border-radius: 50%;
 

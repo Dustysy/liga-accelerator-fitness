@@ -1,11 +1,10 @@
 .subscription {
+  position: relative;
   background-color: $color-ghost-white;
   color: $color-sapphire;
 }
 
 .subscription__container {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -298,7 +298,7 @@
             <h2 class="jury__title">Жюри</h2>
 
             <div class="jury__content-wrapper">
-              <button class="jury__pagination-button pagination-btn pagination-btn--prev" type="button">
+              <button class="jury__pagination-button pagination-btn pagination-btn--prev" data-jury-button="prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
 
                   <svg width="16" height="32">
@@ -306,18 +306,42 @@
                   </svg>
               </button>
 
-              <ul class="jury__list">
-                <li class="jury__item">
-                  <picture>
-                    <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-1-tablet.webp 1x, ./img/jury/jury-1-tablet@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-1-tablet.jpg 1x, ./img/jury/jury-1-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-1-mobile.webp 1x, ./img/jury/jury-1-mobile@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-1-mobile.jpg 1x, ./img/jury/jury-1-mobile@2x.jpg 2x"> -->
-                    <source type="image/webp" srcset="./img/jury/jury-1.webp 1x, ./img/jury/jury-1.webp 2x">
-                    <img src="./img/jury/jury-1.jpg" srcset="./img/jury/jury-1@2x.jpg 2x" width="260" height="294" alt="">
-                  </picture>
+              <div class="jury__swiper swiper" data-swiper="jury">
+                <ul class="jury__list swiper-wrapper">
+                  <li class="jury__item swiper-slide">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-1-tablet.webp 1x, ./img/jury/jury-1-tablet@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-1-tablet.jpg 1x, ./img/jury/jury-1-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-1-mobile.webp 1x, ./img/jury/jury-1-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-1-mobile.jpg 1x, ./img/jury/jury-1-mobile@2x.jpg 2x"> -->
+                      <source type="image/webp" srcset="./img/jury/jury-1.webp 1x, ./img/jury/jury-1.webp 2x">
+                      <img src="./img/jury/jury-1.jpg" srcset="./img/jury/jury-1@2x.jpg 2x" width="260" height="294" alt="">
+                    </picture>
 
-                    <h3 class="jury__name">Анна Павлова</h3>
+                      <h3 class="jury__name">Анна Павлова</h3>
+
+                      <div class="jury__info">
+                        <span class="jury__category">CrossFit</span>
+
+                        <ul class="jury__sublist">
+                          <li class="jury__subitem">Certified Level 3 Trainer</li>
+                          <li class="jury__subitem">Победитель чемпионата России по CrossFit </li>
+                          <li class="jury__subitem">Опыт — 6 лет</li>
+                        </ul>
+                    </div>
+                  </li>
+
+                  <li class="jury__item swiper-slide">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-2-tablet.webp 1x, ./img/jury/jury-2-tablet@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-2-tablet.jpg 1x, ./img/jury/jury-2-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-2-mobile.webp 1x, ./img/jury/jury-2-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-2-mobile.jpg 1x, ./img/jury/jury-2-mobile@2x.jpg 2x"> -->
+                      <source type="image/webp" srcset="./img/jury/jury-2.webp 1x, ./img/jury/jury-2.webp 2x">
+                      <img src="./img/jury/jury-2.jpg" srcset="./img/jury/jury-2@2x.jpg 2x" width="260" height="294" alt="">
+                    </picture>
+
+                    <h3 class="jury__name">Алексей Лавров</h3>
 
                     <div class="jury__info">
                       <span class="jury__category">CrossFit</span>
@@ -327,80 +351,60 @@
                         <li class="jury__subitem">Победитель чемпионата России по CrossFit </li>
                         <li class="jury__subitem">Опыт — 6 лет</li>
                       </ul>
-                  </div>
-                </li>
+                    </div>
+                  </li>
 
-                <li class="jury__item">
-                  <picture>
-                    <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-2-tablet.webp 1x, ./img/jury/jury-2-tablet@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-2-tablet.jpg 1x, ./img/jury/jury-2-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-2-mobile.webp 1x, ./img/jury/jury-2-mobile@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-2-mobile.jpg 1x, ./img/jury/jury-2-mobile@2x.jpg 2x"> -->
-                    <source type="image/webp" srcset="./img/jury/jury-2.webp 1x, ./img/jury/jury-2.webp 2x">
-                    <img src="./img/jury/jury-2.jpg" srcset="./img/jury/jury-2@2x.jpg 2x" width="260" height="294" alt="">
-                  </picture>
+                  <li class="jury__item swiper-slide">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-3-tablet.webp 1x, ./img/jury/jury-3-tablet@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-3-tablet.jpg 1x, ./img/jury/jury-3-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-3-mobile.webp 1x, ./img/jury/jury-3-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-3-mobile.jpg 1x, ./img/jury/jury-3-mobile@2x.jpg 2x"> -->
+                      <source type="image/webp" srcset="./img/jury/jury-3.webp 1x, ./img/jury/jury-3.webp 2x">
+                      <img src="./img/jury/jury-3.jpg" srcset="./img/jury/jury-3@2x.jpg 2x" width="260" height="294" alt="">
+                    </picture>
 
-                  <h3 class="jury__name">Алексей Лавров</h3>
+                    <h3 class="jury__name">Александр Пашков</h3>
 
-                  <div class="jury__info">
-                    <span class="jury__category">CrossFit</span>
+                    <div class="jury__info">
+                      <span class="jury__category">CrossFit</span>
 
-                    <ul class="jury__sublist">
-                      <li class="jury__subitem">Certified Level 3 Trainer</li>
-                      <li class="jury__subitem">Победитель чемпионата России по CrossFit </li>
-                      <li class="jury__subitem">Опыт — 6 лет</li>
-                    </ul>
-                  </div>
-                </li>
+                      <ul class="jury__sublist">
+                        <li class="jury__subitem">Certified Level 3 Trainer</li>
+                        <li class="jury__subitem">Победитель чемпионата России по CrossFit </li>
+                        <li class="jury__subitem">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
 
-                <li class="jury__item">
-                  <picture>
-                    <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-3-tablet.webp 1x, ./img/jury/jury-3-tablet@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-3-tablet.jpg 1x, ./img/jury/jury-3-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-3-mobile.webp 1x, ./img/jury/jury-3-mobile@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-3-mobile.jpg 1x, ./img/jury/jury-3-mobile@2x.jpg 2x"> -->
-                    <source type="image/webp" srcset="./img/jury/jury-3.webp 1x, ./img/jury/jury-3.webp 2x">
-                    <img src="./img/jury/jury-3.jpg" srcset="./img/jury/jury-3@2x.jpg 2x" width="260" height="294" alt="">
-                  </picture>
+                  <li class="jury__item swiper-slide">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-4-tablet.webp 1x, ./img/jury/jury-4-tablet@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-4-tablet.jpg 1x, ./img/jury/jury-4-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-4-mobile.webp 1x, ./img/jury/jury-4-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-4-mobile.jpg 1x, ./img/jury/jury-4-mobile@2x.jpg 2x"> -->
+                      <source type="image/webp" srcset="./img/jury/jury-4.webp 1x, ./img/jury/jury-4.webp 2x">
+                      <img src="./img/jury/jury-4.jpg" srcset="./img/jury/jury-4@2x.jpg 2x" width="260" height="294" alt="">
+                    </picture>
 
-                  <h3 class="jury__name">Александр Пашков</h3>
+                    <h3 class="jury__name">Мария Кетова</h3>
 
-                  <div class="jury__info">
-                    <span class="jury__category">CrossFit</span>
+                    <div class="jury__info">
+                      <span class="jury__category">CrossFit</span>
 
-                    <ul class="jury__sublist">
-                      <li class="jury__subitem">Certified Level 3 Trainer</li>
-                      <li class="jury__subitem">Победитель чемпионата России по CrossFit </li>
-                      <li class="jury__subitem">Опыт — 6 лет</li>
-                    </ul>
-                  </div>
-                </li>
+                      <ul class="jury__sublist">
+                        <li class="jury__subitem">Certified Level 3 Trainer</li>
+                        <li class="jury__subitem">Победитель чемпионата России по CrossFit </li>
+                        <li class="jury__subitem">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
 
-                <li class="jury__item">
-                  <picture>
-                    <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-4-tablet.webp 1x, ./img/jury/jury-4-tablet@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-4-tablet.jpg 1x, ./img/jury/jury-4-tablet@2x.jpg 2x">
-                    <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-4-mobile.webp 1x, ./img/jury/jury-4-mobile@2x.webp 2x">
-                    <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-4-mobile.jpg 1x, ./img/jury/jury-4-mobile@2x.jpg 2x"> -->
-                    <source type="image/webp" srcset="./img/jury/jury-4.webp 1x, ./img/jury/jury-4.webp 2x">
-                    <img src="./img/jury/jury-4.jpg" srcset="./img/jury/jury-4@2x.jpg 2x" width="260" height="294" alt="">
-                  </picture>
+                  <!--  -->
+                </ul>
+              </div>
 
-                  <h3 class="jury__name">Мария Кетова</h3>
-
-                  <div class="jury__info">
-                    <span class="jury__category">CrossFit</span>
-
-                    <ul class="jury__sublist">
-                      <li class="jury__subitem">Certified Level 3 Trainer</li>
-                      <li class="jury__subitem">Победитель чемпионата России по CrossFit </li>
-                      <li class="jury__subitem">Опыт — 6 лет</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-
-              <button class="jury__pagination-button pagination-btn pagination-btn--next" type="button">
+              <button class="jury__pagination-button pagination-btn pagination-btn--next" data-jury-button="next" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
 
                 <svg width="16" height="32">
@@ -512,7 +516,7 @@
             <h2>Отзывы</h2>
 
             <div class="reviews__content-wrapper">
-              <button class="reviews__pagination-button pagination-btn pagination-btn--prev" type="button">
+              <button class="reviews__pagination-button pagination-btn pagination-btn--prev" data-review-button="prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
 
                 <svg width="16" height="32">
@@ -520,26 +524,28 @@
                 </svg>
               </button>
 
-              <ul>
-                <li>
-                  <picture>
-                    <source type="image/webp" srcset="./img/reviewer-1.webp 1x, ./img/reviewer-1.webp 2x">
-                    <img src="./img/reviewer-1.jpg" srcset="./img/reviewer-1@2x.jpg 2x" width="80" height="80" alt="">
-                  </picture>
+              <div class="reviews__swiper swiper" data-swiper="review">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="./img/reviewer-1.webp 1x, ./img/reviewer-1.webp 2x">
+                      <img src="./img/reviewer-1.jpg" srcset="./img/reviewer-1@2x.jpg 2x" width="80" height="80" alt="">
+                    </picture>
 
-                  <div class="reviews__text-wrapper">
-                    <h3>Анна Орлова</h3>
-                    <p>
-                      «Хожу в Supergym уже больше года. Нравится, что
-                      в клубе всегда чисто, тренажеры обновляют,
-                      персонал дружелюбный. Зал просторный, даже в
-                      вечернее время нет очередей»
-                    </p>
-                  </div>
-                </li>
-              </ul>
+                    <div class="reviews__text-wrapper">
+                      <h3>Анна Орлова</h3>
+                      <p>
+                        «Хожу в Supergym уже больше года. Нравится, что
+                        в клубе всегда чисто, тренажеры обновляют,
+                        персонал дружелюбный. Зал просторный, даже в
+                        вечернее время нет очередей»
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-              <button class="reviews__pagination-button pagination-btn pagination-btn--next" type="button">
+              <button class="reviews__pagination-button pagination-btn pagination-btn--next" data-review-button="next" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
 
                 <svg width="16" height="32">
