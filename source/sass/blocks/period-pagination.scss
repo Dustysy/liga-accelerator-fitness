@@ -16,7 +16,8 @@
 }
 
 .period-pagination__button {
-  padding: 14px 0;
+  position: relative;
+  padding: 0 0 14px;
 
   background-color: transparent;
   color: rgba(16, 38, 84, 0.50);
@@ -25,6 +26,23 @@
 
   &--current {
     color: $color-sapphire;
-    border-bottom: 2px solid $color-crimson;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-crimson;
+    }
+  }
+
+  @include vp-1365 {
+    padding: 0 0 15px;
+  }
+
+  @include vp-767 {
+    padding: 0 0 18px;
   }
 }

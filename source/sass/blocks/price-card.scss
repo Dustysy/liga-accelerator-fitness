@@ -2,14 +2,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 65px 77px 65px 78px;
+  padding: 58px 70px 58px 71px;
+
+  border:  7px solid transparent;
+
+  &:nth-child(2n) {
+    border-image: linear-gradient(to bottom right, $color-crimson, #00359F);
+    border-image-slice: 1;
+
+    .price-card__button {
+      background: $torch-red-to-cobalt-right;
+      color: $color-default-white;
+      border: 2px solid transparent;
+      border-image: $torch-red-to-cobalt-right;
+      border-image-slice: 1;
+    }
+  }
+
+  @include hover-focus {
+    border-image: linear-gradient(to bottom right, $color-crimson, #00359F);
+    border-image-slice: 1;
+
+    .price-card__button {
+      background: $torch-red-to-cobalt-right;
+      color: $color-default-white;
+      border: 2px solid transparent;
+      border-image: $torch-red-to-cobalt-right;
+      border-image-slice: 1;
+    }
+  }
 
   @include vp-1365 {
-    padding: 65px 118px;
+    padding: 58px 111px;
   }
 
   @include vp-767 {
-    padding: 50px 42px;
+    padding: 43px 35px;
   }
 }
 
@@ -20,61 +48,59 @@
 }
 
 .price-card__postscript {
-  margin: 0 0 12px;
+  margin: 0 0 69px;
 
   font-weight: 300;
-}
 
-.price-card__price-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-
-  display: flex;
-  gap: 0 14px;
-  align-items: baseline;
-  align-items: end;
+  @include vp-1365 {
+    margin: 0 0 72px;
+  }
 
   @include vp-767 {
-    gap: 0 10px;
+    margin: 0 0 62px;
   }
 }
 
+
 .price-card__price {
-  margin: 0;
+  position: relative;
+  margin: 0 0 35px;
 
   @include font-face(60px, 150%, 60px, 150%, 48px, 150%);
+  font-weight: 700;
   color: $color-egyptian-blue;
 
-  &--back {
-    position: relative;
-    margin: 35px 0;
-    padding: 0;
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    z-index: -1;
+    top: -60%;
+    left: 50%;
+    transform: translate(-50%);
 
     @include font-face(100px, 150%, 100px, 150%, 80px, 150%);
     font-weight: 700;
     color: #e8e8e8;
   }
-}
 
-.price-card__price-wrapper .rouble {
-  font-size: 60px;
-  line-height: 60px;
-  align-self: flex-start;
-  margin: 24px 0;
-  color: $color-sapphire;
+  @include vp-1365 {
+    margin: 0 0 24px;
+  }
 
   @include vp-767 {
-    font-size: 48px;
-    line-height: 48px;
-    margin: 20px 0 19px;
+    margin: 0 0 22px;
   }
 }
 
 .price-card__button {
+  width: 100%;
   padding: 25px 42px;
 
   color: $color-sapphire;
+  text-align: center;
   border: 2px solid $color-sapphire;
+
+  @include vp-1365 {
+    padding: 20px 42px;
+  }
 }
