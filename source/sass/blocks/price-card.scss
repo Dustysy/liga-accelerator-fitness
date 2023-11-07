@@ -77,10 +77,12 @@
     top: -60%;
     left: 50%;
     transform: translate(-50%);
+    width: 150%;
 
     @include font-face(100px, 150%, 100px, 150%, 80px, 150%);
     font-weight: 700;
     color: #e8e8e8;
+    text-align: center;
   }
 
   @include vp-1365 {
@@ -94,6 +96,7 @@
 
 .price-card__button {
   width: 100%;
+  margin: auto 0 0;
   padding: 25px 42px;
 
   color: $color-sapphire;

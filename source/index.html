@@ -44,7 +44,7 @@
 
               <h1 class="hero__title">Фитнес<br>Центр</h1>
 
-              <a class="hero__button btn" href="#">Купить абонемент</a>
+              <a class="hero__button btn" href="#">Купить&nbsp;абонемент</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width:1365px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
@@ -111,145 +111,146 @@
 
         <!-- SUBSCRIPTION -->
         <section class="subscription">
-          <div class="subscription__container container">
+          <div class="subscription__container container" data-tabs="parent">
             <h2 class="subscription__title">Абонементы</h2>
-            <ul class="subscription__period-pagination period-pagination">
+            <ul class="subscription__period-pagination period-pagination" data-tabs="controls">
               <li class="period-pagination__item">
-                <button class="period-pagination__button period-pagination__button--current" type="button">1&nbsp;месяц</button>
+                <button class="period-pagination__button" type="button" data-tabs="control">1&nbsp;месяц</button>
               </li>
 
               <li class="period-pagination__item">
-                <button class="period-pagination__button" type="button">6&nbsp;месяцев</button>
+                <button class="period-pagination__button" type="button" data-tabs="control">6&nbsp;месяцев</button>
               </li>
 
               <li class="period-pagination__item">
-                <button class="period-pagination__button" type="button">12&nbsp;месяцев</button>
+                <button class="period-pagination__button" type="button" data-tabs="control">12&nbsp;месяцев</button>
 
               </li>
             </ul>
 
-            <ul class="subscription__price-list subscription__price-list--1month">
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title">С тренером</h3>
-                <span class="price-card__postscript">12 занятий</span>
+            <div class="subscription__price-lists" data-tabs="content">
+              <ul class="subscription__price-list for-load" data-tabs="element">
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">С тренером</h3>
+                  <span class="price-card__postscript">12 занятий</span>
 
-                <p class="price-card__price" data-price="5000">5000
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
+                  <p class="price-card__price" data-price="5000">5000
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
 
-                <a class="price-card__button btn" href="#">Купить абонемент</a>
-              </li>
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
 
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title">Дневной</h3>
-                <span class="price-card__postscript">с 8:00 до 17:00 </span>
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">Дневной</h3>
+                  <span class="price-card__postscript">с 8:00 до 17:00 </span>
 
-                <p class="price-card__price" data-price="1700">1700
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
+                  <p class="price-card__price" data-price="1700">1700
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
 
 
-                <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
-              </li>
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
 
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title">Полный день</h3>
-                <span class="price-card__postscript">с 8:00 до 22:00 </span>
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">Полный день</h3>
+                  <span class="price-card__postscript">с 8:00 до 22:00 </span>
 
-                <p class="price-card__price" data-price="2700">2700
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
+                  <p class="price-card__price" data-price="2700">2700
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
 
-                <a class="price-card__button btn" href="#">Купить абонемент</a>
-              </li>
-            </ul>
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
+              </ul>
 
-            <!-- <ul class="subscription__price-list subscription__price-list--6month">
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title"></h3>
-                <span class="price-card__postscript"></span>
+              <ul class="subscription__price-list" data-tabs="element">
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">С тренером</h3>
+                  <span class="price-card__postscript">12 занятий</span>
 
-                <p class="price-card__price" data-price="">
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
-                <a class="price-card__button btn" href="#">Купить абонемент</a>
-              </li>
+                  <p class="price-card__price" data-price="30 000">30 000
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
 
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title"></h3>
-                <span class="price-card__postscript"></span>
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">Дневной</h3>
+                  <span class="price-card__postscript">с 8:00 до 17:00 </span>
 
-                <p class="price-card__price" data-price="">
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
+                  <p class="price-card__price" data-price="10 200">10 200
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
 
-                <a class="price-card__button btn" href="#">Купить абонемент</a>
-              </li>
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
 
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title"></h3>
-                <span class="price-card__postscript"></span>
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">Полный день</h3>
+                  <span class="price-card__postscript">с 8:00 до 22:00 </span>
 
-                <p class="price-card__price" data-price="">
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
+                  <p class="price-card__price" data-price="16 200">16 200
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
 
-                <a class="price-card__button btn" href="#">Купить абонемент</a>
-              </li>
-            </ul>
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
+              </ul>
 
-            <ul class="subscription__price-list subscription__price-list--12month">
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title"></h3>
-                <span class="price-card__postscript"></span>
+              <ul class="subscription__price-list" data-tabs="element">
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">С тренером</h3>
+                  <span class="price-card__postscript">12 занятий</span>
 
-                <p class="price-card__price" data-price="">
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
+                  <p class="price-card__price" data-price="60 000">60 000
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
 
-                <a class="price-card__button btn" href="#">Купить абонемент</a>
-              </li>
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">Дневной</h3>
+                  <span class="price-card__postscript">с 8:00 до 17:00 </span>
 
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title"></h3>
-                <span class="price-card__postscript"></span>
+                  <p class="price-card__price" data-price="20 400">20 400
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
 
-                <p class="price-card__price" data-price="">
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
 
-                <a class="price-card__button btn" href="#">Купить абонемент</a>
-              </li>
+                <li class="subscription__price-item price-card">
+                  <h3 class="price-card__title">Полный день</h3>
+                  <span class="price-card__postscript">с 8:00 до 22:00 </span>
 
-              <li class="subscription__price-item price-card">
-                <h3 class="price-card__title"></h3>
-                <span class="price-card__postscript"></span>
+                  <p class="price-card__price" data-price="32 400">32 400
+                    <svg width="30" height="42" viewBox="0 0 30 42" role="img">
+                      <use href="img/sprite.svg#rouble"></use>
+                    </svg>
+                  </p>
 
-                <p class="price-card__price" data-price="">
-                  <svg width="30" height="42" viewBox="0 0 30 42" role="img">
-                    <use href="img/sprite.svg#rouble"></use>
-                  </svg>
-                </p>
-
-                <a class="price-card__button btn" href="#">Купить абонемент</a>
-              </li>
-            </ul> -->
+                  <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
+                </li>
+              </ul>
+            </div>
 
             <picture>
               <source type="image/webp" media="(max-width:1365px)" srcset="./img/weight-tablet.webp 1x, ./img/weight@2x-tablet.webp 2x">

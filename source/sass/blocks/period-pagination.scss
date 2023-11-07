@@ -24,7 +24,7 @@
   border: none;
   cursor: pointer;
 
-  &--current {
+  &.is-active {
     color: $color-sapphire;
 
     &::after {
