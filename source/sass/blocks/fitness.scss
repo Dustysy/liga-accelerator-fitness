@@ -4,22 +4,39 @@
 
 .fitness__container {
   display: flex;
-  flex-wrap: wrap;
 
   @include vp-1365 {
     flex-direction: column;
     align-items: center;
     padding: 100px 45px;
-
-    text-align: center;
   }
 
   @include vp-767 {
+    align-items: start;
     padding: 70px 0;
   }
 }
 
-.fitness h2 {
+.fitness__info-container {
+  width: 33.33%;
+  margin: 0 145px 0 0;
+
+  @include vp-1365 {
+    width: 100%;
+    margin: 0 0 36px;
+    padding: 0 133px;
+
+    text-align: center;
+  }
+
+
+  @include vp-767 {
+    padding: 0 15px;
+    text-align: start;
+  }
+}
+
+.fitness__info-container h2 {
   margin: 0 0 25px;
 
   font-family: $ff-alumni-sans;
@@ -40,24 +57,7 @@
   }
 }
 
-.fitness__info-container {
-  width: 33.33%;
-  margin: 0 145px 0 0;
-
-  @include vp-1365 {
-    width: 100%;
-    margin: 0 0 36px;
-    padding: 0 133px;
-  }
-
-
-  @include vp-767 {
-    padding: 0 15px;
-  }
-}
-
-
-.fitness span {
+.fitness__info-container span {
   display: block;
   margin: 0 0 95px;
 
@@ -73,7 +73,7 @@
   }
 }
 
-.fitness p {
+.fitness__info-container p {
   margin: 0 0 8px;
   font-weight: 300;
 
@@ -84,7 +84,20 @@
   }
 }
 
-.fitness img {
+.fitness__media-wrapper {
+  position: relative;
+  min-height: 516px;
+
+  @include vp-1365 {
+    min-height: 428px;
+  }
+
+  @include vp-767 {
+    min-height: unset;
+  }
+}
+
+.fitness__media-wrapper img {
   object-fit: cover;
 
   @include vp-1365 {
@@ -97,14 +110,15 @@
 }
 
 .fitness__video-container {
-  position: relative;
+  position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 53%; /*PP*/
 
   @include vp-1365 {
-    left: 0;
-    transform: translateY(-50%);
+    top: 55%; /*PP*/
+    left: 50%;
+    transform: translate(-50%);
+
     max-width: 100%;
   }
 

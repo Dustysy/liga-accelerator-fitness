@@ -44,7 +44,7 @@
 
               <h1 class="hero__title">Фитнес<br>Центр</h1>
 
-              <button class="hero__button btn" type="button">Купить абонемент</button>
+              <a class="hero__button btn" href="#">Купить абонемент</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width:1365px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
@@ -77,34 +77,35 @@
               </p>
             </div>
 
-            <picture>
-              <source type="image/webp" media="(max-width:1365px)" srcset="./img/fitness-hall/fitness-hall-tablet.webp 1x, ./img/fitness-hall/fitness-hall-tablet@2x.webp 2x">
-              <source type="image/jpg" media="(max-width:1365px)" srcset="./img/fitness-hall/fitness-hall-tablet.jpg 1x, ./img/fitness-hall/fitness-hall-tablet@2x.jpg 2x">
-              <source type="image/webp" media="(max-width:767px)" srcset="./img/fitness-hall/fitness-hall-mobile.webp 1x, ./img/fitness-hall/fitness-hall-mobile@2x.webp 2x">
-              <source type="image/jpg" media="(max-width:767px)" srcset="./img/fitness-hall/fitness-hall-mobile.jpg 1x, ./img/fitness-hall/fitness-hall-mobile@2x.jpg 2x">
-              <source type="image/webp" srcset="./img/fitness-hall/fitness-hall.webp 1x, ./img/fitness-hall/fitness-hall.webp 2x">
-              <img src="./img/fitness-hall/fitness-hall.jpg" srcset="./img/fitness-hall/fitness-hall@2x.jpg 2x" width="660" height="401" alt="Множество различных тренажёров в белом тренажёрном зале">
-            </picture>
-
-            <div class="fitness__video-container video">
+            <div class="fitness__media-wrapper">
               <picture>
-                <source type="image/webp" srcset="./img/fitness-hall/video.webp 1x, ./img/fitness-hall/video.webp 2x">
-                <img src="./img/fitness-hall/video.jpg" srcset="./img/fitness-hall/video@2x.jpg 2x" width="364" height="228" alt="">
+                <source type="image/webp" media="(max-width:1365px)" srcset="./img/fitness-hall/fitness-hall-tablet.webp 1x, ./img/fitness-hall/fitness-hall-tablet@2x.webp 2x">
+                <source type="image/jpg" media="(max-width:1365px)" srcset="./img/fitness-hall/fitness-hall-tablet.jpg 1x, ./img/fitness-hall/fitness-hall-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(max-width:767px)" srcset="./img/fitness-hall/fitness-hall-mobile.webp 1x, ./img/fitness-hall/fitness-hall-mobile@2x.webp 2x">
+                <source type="image/jpg" media="(max-width:767px)" srcset="./img/fitness-hall/fitness-hall-mobile.jpg 1x, ./img/fitness-hall/fitness-hall-mobile@2x.jpg 2x">
+                <source type="image/webp" srcset="./img/fitness-hall/fitness-hall.webp 1x, ./img/fitness-hall/fitness-hall.webp 2x">
+                <img src="./img/fitness-hall/fitness-hall.jpg" srcset="./img/fitness-hall/fitness-hall@2x.jpg 2x" width="660" height="401" alt="Множество различных тренажёров в белом тренажёрном зале">
               </picture>
 
-              <iframe width="364" height="228"
-                src="https://www.youtube.com/watch?v=9TZXsZItgdw">
-              </iframe>
+              <div class="fitness__video-container video">
+                <picture>
+                  <source type="image/webp" srcset="./img/fitness-hall/video.webp 1x, ./img/fitness-hall/video.webp 2x">
+                  <img src="./img/fitness-hall/video.jpg" srcset="./img/fitness-hall/video@2x.jpg 2x" width="364" height="228" alt="">
+                </picture>
 
-              <button class="video__play-button" type="button">
-                <span class="visually-hidden">Проиграть видео</span>
+                <iframe width="364" height="228"
+                  src="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                </iframe>
 
-                <svg width="22" height="22">
-                  <use href="./img/sprite.svg#play"></use>
-                </svg>
-              </button>
-            </div>
+                <button class="video__play-button" type="button">
+                  <span class="visually-hidden">Проиграть видео</span>
 
+                  <svg width="22" height="22">
+                    <use href="./img/sprite.svg#play"></use>
+                  </svg>
+                </button>
+              </div>
+          </div>
           </div>
         </section>
 
