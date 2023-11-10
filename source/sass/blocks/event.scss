@@ -120,6 +120,7 @@
   justify-content: center;
   text-align: center;
   width: 100%;
+  color: $color-default-white;
 
   @include vp-1365 {
     padding: 20px 50px;

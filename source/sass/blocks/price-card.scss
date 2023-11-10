@@ -103,6 +103,30 @@
   text-align: center;
   border: 2px solid $color-sapphire;
 
+  @include hover-focus {
+    &:not(:disabled){
+      background: $torch-red-to-cobalt-right;
+      color: $color-default-white;
+      border-color: transparent;
+      border-image: $torch-red-to-cobalt-right;
+      border-image-slice: 1;
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    &:not(:disabled){
+      color: rgba(255, 255, 255, 0.7)
+    }
+  }
+
+  &:disabled {
+    color: $color-sapphire;
+    border-color: $color-sapphire;
+    opacity: 0.3;
+    cursor: default;
+  }
+
   @include vp-1365 {
     padding: 20px 42px;
   }

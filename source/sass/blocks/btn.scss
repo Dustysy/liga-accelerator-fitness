@@ -1,5 +1,6 @@
 .btn {
   display: inline-flex;
+  justify-content: center;
   padding: 25px 54px;
 
   font-family: $ff-roboto-condensed;
@@ -7,7 +8,8 @@
   line-height: $lh-btn-desktop-medium;
   font-weight: 700;
   letter-spacing: 0.6px;
-  color: $color-default-white;
+  color: $color-default-black;
+  text-align: center;
   text-transform: uppercase;
 
   background-color: transparent;
