@@ -77,10 +77,11 @@
 }
 
 .offers a {
+  position: relative;
   display: flex;
-  width: 79px;
+  width: 99px;
   margin: auto 0 0;
-  padding: 0 0 4px;
+  padding: 10px;
 
   font-size: $fz-btn-desktop-large;
   line-height: $lh-btn-desktop-large;
@@ -89,10 +90,49 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  border-bottom: 1px solid $color-resolution-blue;
+  border: 1px solid transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    height: 1px;
+    width: 80%;
+    margin: 0 10px;
+    background-color: $color-resolution-blue;
+  }
 
   @include vp-767 {
     margin: auto;
+  }
+
+  @include hover {
+    &:not(:disabled) {
+      opacity: 0.8;
+    }
+  }
+
+  @include focus {
+    &:not(:disabled) {
+      border-color: $color-resolution-blue;
+      outline: none;
+      opacity: 1;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  @include active {
+    &:not(:disabled) {
+      color: $color-resolution-blue;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 }
 
@@ -170,7 +210,22 @@
 
       a {
         color: $color-default-white;
-        border-color: $color-default-white;
+
+        &::after {
+          background-color: $color-default-white;
+        }
+
+        @include focus {
+          &:not(:disabled) {
+            border-color: $color-default-white;
+          }
+        }
+
+        @include active {
+          &:not(:disabled) {
+            color: $color-default-white;
+          }
+        }
       }
     }
 

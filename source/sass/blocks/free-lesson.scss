@@ -60,9 +60,8 @@
 
 .free-lesson label {
   margin: 0;
-  min-width: 190px;
+  width: 100%;
 
-  border-bottom: 2px solid #74819c;
 
   @include vp-767 {
     margin: 0 0 5px;
@@ -70,17 +69,55 @@
 }
 
 .free-lesson input {
-  padding: 0 0 4px;
+  vertical-align: middle;
+  width: 100%;
+  padding: 9px 4px; /*PP*/
 
   @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
   font-weight: 400;
   color: $color-default-white;
 
   background-color: transparent;
-  border: none;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #74819c;
 
   &::placeholder {
     color: $color-default-white;
+  }
+
+  @include hover {
+    &:not(:disabled) {
+      border-bottom: 1px solid $color-default-white;
+    }
+  }
+
+  @include focus {
+    &:not(:disabled){
+      border: 1px solid $color-default-white;
+      outline: none;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
+  }
+
+  @include active {
+    &:not(:disabled){
+      border: 1px solid $color-default-white;
+      outline: none;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  &:disabled {
+    color: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: default;
   }
 }
 
@@ -89,4 +126,25 @@
   justify-content: center;
   grid-column: 1/-1;
   color: $color-default-white;
+
+  @include hover-focus {
+    &:not(:disabled){
+      background: $color-default-white;
+      color: $color-egyptian-blue;
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    &:not(:disabled){
+      color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    color: $color-default-white;
+    border-color: $color-default-white;
+    opacity: 0.5;
+    cursor: default;
+  }
 }

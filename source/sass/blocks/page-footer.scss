@@ -15,10 +15,17 @@
   }
 }
 
+.page-footer__logo-link {
+  @include font-face(24px, 24px, 22px, 22px, 20px, 20px);
+  font-weight: 400;
+  color: $color-default-white;
+  text-transform: uppercase;
+}
+
 .page-footer__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 40px;
+  gap: 20px 40px; /*PP*/
   margin: 0;
   padding: 0;
   list-style: none;
@@ -33,17 +40,68 @@
   }
 }
 
-.page-footer__logo-link {
-  @include font-face(24px, 24px, 22px, 22px, 20px, 20px);
-  font-weight: 400;
-  color: $color-default-white;
-  text-transform: uppercase;
+.page-footer__item {
+  display: flex;
+  justify-content: center;
+  text-align: center; /*PP*/
+
 }
 
 .page-footer__link {
+  position: relative;
+  padding: 4px 9px; /*PP*/
+
   @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
   font-weight: 400;
   color: $color-default-white;
+
+  border: 1px solid transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    bottom: 4px;
+    left: 9px;
+    right: 9px;
+    height: 1px;
+    width: 80%;
+    background-color: $color-default-white;
+  }
+
+  @include hover {
+    &::after {
+      display: flex;
+    }
+  }
+
+  @include focus {
+    border-color: $color-default-white;
+    outline: none;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include active {
+    border: 1px solid transparent;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    border: 1px solid transparent;
+    opacity: 0.4;
+    pointer-events: none;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .page-footer__socials {

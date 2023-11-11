@@ -7,16 +7,34 @@
   list-style: none;
 }
 
-.socials__item {
-  padding: 1.5px 1.5px;
-  background-color: $color-default-white;
-  border-radius: 50%;
-}
-
 .socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
   min-width: 25px;
   min-height: 25px;
+
+  padding: 1.5px 1.5px;
+
+  color: $color-black-russian;
+  background-color: $color-default-white;
+  border-radius: 50%;
+
+  @include hover-focus {
+    background-color: $color-egyptian-blue;
+    color: $color-default-white;
+    outline: none;
+  }
+
+  @include active {
+    background-color: $color-sapphire;
+    color: $color-default-white;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: $color-black-russian;
+    pointer-events: none;
+  }
 }

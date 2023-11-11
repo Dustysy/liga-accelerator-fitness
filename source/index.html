@@ -44,7 +44,7 @@
 
               <h1 class="hero__title">Фитнес<br>Центр</h1>
 
-              <a class="hero__button btn" href="#">Купить&nbsp;абонемент</a>
+              <a class="hero__button btn" href="#subscription">Купить&nbsp;абонемент</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width:1365px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
@@ -110,7 +110,7 @@
         </section>
 
         <!-- SUBSCRIPTION -->
-        <section class="subscription">
+        <section class="subscription" id="subscription">
           <div class="subscription__container container" data-tabs="parent">
             <h2 class="subscription__title">Абонементы</h2>
             <ul class="subscription__period-pagination period-pagination" data-tabs="controls">
@@ -130,7 +130,7 @@
 
             <div class="subscription__price-lists" data-tabs="content">
               <ul class="subscription__price-list for-load" data-tabs="element">
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">С тренером</h3>
                   <span class="price-card__postscript">12 занятий</span>
 
@@ -143,7 +143,7 @@
                   <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
                 </li>
 
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">Дневной</h3>
                   <span class="price-card__postscript">с 8:00 до 17:00 </span>
 
@@ -157,7 +157,7 @@
                   <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
                 </li>
 
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">Полный день</h3>
                   <span class="price-card__postscript">с 8:00 до 22:00 </span>
 
@@ -172,7 +172,7 @@
               </ul>
 
               <ul class="subscription__price-list" data-tabs="element">
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">С тренером</h3>
                   <span class="price-card__postscript">12 занятий</span>
 
@@ -184,7 +184,7 @@
                   <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
                 </li>
 
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">Дневной</h3>
                   <span class="price-card__postscript">с 8:00 до 17:00 </span>
 
@@ -197,7 +197,7 @@
                   <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
                 </li>
 
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">Полный день</h3>
                   <span class="price-card__postscript">с 8:00 до 22:00 </span>
 
@@ -212,7 +212,7 @@
               </ul>
 
               <ul class="subscription__price-list" data-tabs="element">
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">С тренером</h3>
                   <span class="price-card__postscript">12 занятий</span>
 
@@ -224,7 +224,7 @@
                   <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
                 </li>
 
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">Дневной</h3>
                   <span class="price-card__postscript">с 8:00 до 17:00 </span>
 
@@ -237,7 +237,7 @@
                   <a class="price-card__button btn" href="#">Купить&nbsp;абонемент</a>
                 </li>
 
-                <li class="subscription__price-item price-card">
+                <li class="subscription__price-item price-card" tabindex="0">
                   <h3 class="price-card__title">Полный день</h3>
                   <span class="price-card__postscript">с 8:00 до 22:00 </span>
 
@@ -264,37 +264,35 @@
         <!-- EVENT -->
         <section class="event">
           <div class="event__container container">
-            <!-- <div class="event__content-wrapper"> -->
-              <div class="event__info-wrapper">
-                <h2 class="event__title"> Super Games</h2>
+            <div class="event__info-wrapper">
+              <h2 class="event__title"> Super Games</h2>
 
-                <div class="event__date-container">
-                  <dl class="event__date">
-                    <dt>Дата</dt>
-                    <dd>7
-                      <span>Марта 2019</span>
-                    </dd>
-                  </dl>
+              <div class="event__date-container">
+                <dl class="event__date">
+                  <dt>Дата</dt>
+                  <dd>7
+                    <span>Марта<br>2019</span>
+                  </dd>
+                </dl>
 
-                  <dl class="event__time">
-                    <dt>Время</dt>
-                    <dd>12:00</dd>
-                  </dl>
-                </div>
-
-                <p class="event__text">Ежегодные соревнования по CrossFit</p>
-                <a class="event__button btn btn--red" href="#">Заполнить&nbsp;заявку</a>
+                <dl class="event__time">
+                  <dt>Время</dt>
+                  <dd>12:00</dd>
+                </dl>
               </div>
 
-              <picture>
-                <source type="image/webp" media="(max-width:1365px)" srcset="./img/event-tablet.webp 1x, ./img/event-tablet@2x.webp 2x">
-                <source type="image/jpg" media="(max-width:1365px)" srcset="./img/event-tablet.jpg 1x, ./img/event-tablet@2x.jpg 2x">
-                <source type="image/webp" media="(max-width:767px)" srcset="./img/event-mobile.webp 1x, ./img/event-mobile@2x.webp 2x">
-                <source type="image/jpg" media="(max-width:767px)" srcset="./img/event-mobile.jpg 1x, ./img/event-mobile@2x.jpg 2x">
-                <source type="image/webp" srcset="./img/event.webp 1x, ./img/event.webp 2x">
-                <img src="./img/event.jpg" srcset="./img/event@2x.jpg 2x" width="280" height="462" alt="Подтянутая женшщина в голубом спортивном костюме на фоне неба устремляет взгляд вверх на солнце">
-              </picture>
-            <!-- </div> -->
+              <p class="event__text">Ежегодные соревнования по CrossFit</p>
+              <a class="event__button btn btn--red" href="#">Заполнить&nbsp;заявку</a>
+            </div>
+
+            <picture>
+              <source type="image/webp" media="(max-width:1365px)" srcset="./img/event-tablet.webp 1x, ./img/event-tablet@2x.webp 2x">
+              <source type="image/jpg" media="(max-width:1365px)" srcset="./img/event-tablet.jpg 1x, ./img/event-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(max-width:767px)" srcset="./img/event-mobile.webp 1x, ./img/event-mobile@2x.webp 2x">
+              <source type="image/jpg" media="(max-width:767px)" srcset="./img/event-mobile.jpg 1x, ./img/event-mobile@2x.jpg 2x">
+              <source type="image/webp" srcset="./img/event.webp 1x, ./img/event.webp 2x">
+              <img src="./img/event.jpg" srcset="./img/event@2x.jpg 2x" width="280" height="462" alt="Подтянутая женшщина в голубом спортивном костюме на фоне неба устремляет взгляд вверх на солнце">
+            </picture>
           </div>
         </section>
 
@@ -314,7 +312,7 @@
 
               <div class="jury__swiper swiper" data-swiper="jury">
                 <ul class="jury__list swiper-wrapper">
-                  <li class="jury__item swiper-slide">
+                  <li class="jury__item swiper-slide" tabindex="0">
                     <picture>
                       <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-1-tablet.webp 1x, ./img/jury/jury-1-tablet@2x.webp 2x">
                       <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-1-tablet.jpg 1x, ./img/jury/jury-1-tablet@2x.jpg 2x">
@@ -338,7 +336,7 @@
                     </div>
                   </li>
 
-                  <li class="jury__item swiper-slide">
+                  <li class="jury__item swiper-slide" tabindex="0">
                     <picture>
                       <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-2-tablet.webp 1x, ./img/jury/jury-2-tablet@2x.webp 2x">
                       <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-2-tablet.jpg 1x, ./img/jury/jury-2-tablet@2x.jpg 2x">
@@ -362,7 +360,7 @@
                     </div>
                   </li>
 
-                  <li class="jury__item swiper-slide">
+                  <li class="jury__item swiper-slide" tabindex="0">
                     <picture>
                       <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-3-tablet.webp 1x, ./img/jury/jury-3-tablet@2x.webp 2x">
                       <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-3-tablet.jpg 1x, ./img/jury/jury-3-tablet@2x.jpg 2x">
@@ -386,7 +384,7 @@
                     </div>
                   </li>
 
-                  <li class="jury__item swiper-slide">
+                  <li class="jury__item swiper-slide" tabindex="0">
                     <picture>
                       <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-4-tablet.webp 1x, ./img/jury/jury-4-tablet@2x.webp 2x">
                       <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-4-tablet.jpg 1x, ./img/jury/jury-4-tablet@2x.jpg 2x">
@@ -410,7 +408,29 @@
                     </div>
                   </li>
 
-                  <!--  -->
+                  <li class="jury__item swiper-slide" tabindex="0">
+                    <picture>
+                      <!-- <source type="image/webp" media="(max-width:1365px)" srcset="./img/jury/jury-3-tablet.webp 1x, ./img/jury/jury-3-tablet@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:1365px)" srcset="./img/jury/jury-3-tablet.jpg 1x, ./img/jury/jury-3-tablet@2x.jpg 2x">
+                      <source type="image/webp" media="(max-width:767px)" srcset="./img/jury/jury-3-mobile.webp 1x, ./img/jury/jury-3-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width:767px)" srcset="./img/jury/jury-3-mobile.jpg 1x, ./img/jury/jury-3-mobile@2x.jpg 2x"> -->
+                      <source type="image/webp" srcset="./img/jury/jury-3.webp 1x, ./img/jury/jury-3.webp 2x">
+                      <img src="./img/jury/jury-3.jpg" srcset="./img/jury/jury-3@2x.jpg 2x" width="260" height="294" alt="">
+                    </picture>
+
+                    <h3 class="jury__name jury__name--front">Александр Пашков</h3>
+
+                    <div class="jury__info">
+                      <h3 class="jury__name jury__name--back">Александр Пашков</h3>
+                      <span class="jury__category">CrossFit</span>
+
+                      <ul class="jury__sublist">
+                        <li class="jury__subitem">Certified Level 3 Trainer</li>
+                        <li class="jury__subitem">Победитель чемпионата России по CrossFit </li>
+                        <li class="jury__subitem">Опыт — 6 лет</li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </div>
 
@@ -485,7 +505,7 @@
                   <h3>Год</h3>
                   <span>4999</span>
                   <p>Безлимитный абонемент в тренажерный зал</p>
-                  <a>подробнее</a>
+                  <a href="#">подробнее</a>
                 </div>
 
                 <picture>
@@ -501,13 +521,13 @@
               <li>
                 <h3>Месяц бесплатно</h3>
                 <p>Приведи друга, получи абонемент в подарок</p>
-                <a>подробнее</a>
+                <a href="#">подробнее</a>
               </li>
 
               <li>
                 <h3>Скидка 20%</h3>
                 <p>Корпоративный фитнес с командой</p>
-                <a>подробнее</a>
+                <a href="#">подробнее</a>
               </li>
             </ul>
           </div>

@@ -16,11 +16,6 @@
   border: 2px solid $color-default-white;
   cursor: pointer;
 
-  &--red {
-    background-color: $color-torch-red;
-    border: 2px solid $color-default-white;
-  }
-
   &:disabled {
     opacity: 0.5;
 
@@ -28,6 +23,7 @@
   }
 
   @include hover-focus {
+    outline: none;
     opacity: 0.8;
   }
 

@@ -19,9 +19,11 @@
     }
   }
 
+
   @include hover-focus {
     border-image: linear-gradient(to bottom right, $color-crimson, #00359F);
     border-image-slice: 1;
+    outline: none;
 
     .price-card__button {
       background: $torch-red-to-cobalt-right;
@@ -31,6 +33,7 @@
       border-image-slice: 1;
     }
   }
+
 
   @include vp-1365 {
     padding: 58px 111px;
@@ -111,6 +114,7 @@
       border-image: $torch-red-to-cobalt-right;
       border-image-slice: 1;
       opacity: 1;
+      outline: 2px solid $color-sapphire;
     }
   }
 

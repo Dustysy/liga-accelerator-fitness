@@ -98,7 +98,25 @@
   color: $color-default-white;
   text-align: center;
 
-  @include vp-1365 {
+  @include hover-focus {
+    &:not(:disabled){
+      background: $color-default-white;
+      color: $color-egyptian-blue;
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    &:not(:disabled){
+      color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    color: $color-default-white;
+    border-color: $color-default-white;
+    opacity: 0.5;
+    cursor: default;
   }
 
   @include vp-767 {

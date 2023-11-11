@@ -19,16 +19,6 @@
   }
 }
 
-.event__content-wrapper {
-  @include vp-1365 {
-
-  }
-
-  @include vp-767 {
-
-  }
-}
-
 .event__info-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -68,19 +58,53 @@
 
 .event__date-container {
   flex-basis: 33%;
-  @include vp-1365 {
+  margin: 0 0 23px;
 
+  @include vp-1365 {
+    margin: 0 0 6px;
   }
 
   @include vp-767 {
-
+    margin: 0 0 13px;
   }
 }
 
 .event__date-container dl {
+  position: relative;
   margin: 0;
+
   &:not(:last-child) {
     margin: 0 0 20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 32px; /*PP*/
+    left: 0;
+    height: 1px;
+
+    background-color: $color-default-white;
+
+    @include vp-1365 {
+      top: 24px;
+    }
+
+    @include vp-767 {
+      top: 20px;
+    }
+  }
+
+  &.event__date {
+    &::after {
+      width: 42px;
+    }
+  }
+
+  &.event__time {
+    &::after {
+      width: 56px;
+    }
   }
 }
 
@@ -105,12 +129,14 @@
 
 .event__text {
   width: 100%;
-  @include vp-1365 {
+  margin: 0 0 55px;
 
+  @include vp-1365 {
+    margin: 0 0 21px;
   }
 
   @include vp-767 {
-
+    margin: 0 0 20px;
   }
 }
 
@@ -120,7 +146,30 @@
   justify-content: center;
   text-align: center;
   width: 100%;
+  height: fit-content;
+  margin: auto 0 0;
   color: $color-default-white;
+
+  @include hover-focus {
+    &:not(:disabled){
+      background: $color-default-white;
+      color: $color-egyptian-blue;
+      opacity: 1;
+    }
+  }
+
+  @include active {
+    &:not(:disabled){
+      color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    color: $color-default-white;
+    border-color: $color-default-white;
+    opacity: 0.5;
+    cursor: default;
+  }
 
   @include vp-1365 {
     padding: 20px 50px;
@@ -131,7 +180,10 @@
   }
 }
 
+.event picture,
 .event img {
+  flex-basis: 60%; /*PP*/
+  flex-shrink: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;

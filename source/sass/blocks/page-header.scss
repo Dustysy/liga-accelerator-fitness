@@ -37,6 +37,7 @@
   position: relative;
 
   @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
+  font-weight: 700;
   color: $color-default-white;
 
   &::after {
@@ -53,6 +54,7 @@
 
   @include hover-focus {
     color: $color-resolution-blue;
+    outline: none;
   }
 
   @include active {
@@ -65,5 +67,6 @@
 
   &:disabled {
     color: $color-ghost-white;
+    opacity: 0.5;
   }
 }
