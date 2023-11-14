@@ -43,7 +43,8 @@
   }
 
   @include hover-focus {
-    &:active:not(:disabled) {
+    &:active:not(:disabled),
+    &:focus-visible {
       opacity: 1;
       outline: none;
 

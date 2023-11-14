@@ -114,7 +114,7 @@
       border-image: $torch-red-to-cobalt-right;
       border-image-slice: 1;
       opacity: 1;
-      outline: 2px solid $color-sapphire;
+      outline: 2px solid $color-sapphire; /*Доьавлено, чтобы было видно, что фокус перешел на кнопку*/
     }
   }
 

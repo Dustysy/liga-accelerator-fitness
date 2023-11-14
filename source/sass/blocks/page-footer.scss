@@ -20,6 +20,15 @@
   font-weight: 400;
   color: $color-default-white;
   text-transform: uppercase;
+
+  @include hover-focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__list {
@@ -49,7 +58,7 @@
 
 .page-footer__link {
   position: relative;
-  padding: 4px 9px; /*PP*/
+  padding: 4px 9px;
 
   @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
   font-weight: 400;
@@ -65,7 +74,7 @@
     left: 9px;
     right: 9px;
     height: 1px;
-    width: 80%;
+    width: calc(100% - 15px);
     background-color: $color-default-white;
   }
 

@@ -22,6 +22,15 @@
   width: 120px;
   height: 26px;
 
+  @include hover-focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
+
   @include vp-1365 {
     width: 111px;
     height: 24px;
