@@ -139,39 +139,51 @@
   }
 }
 
-.faq__qa-lists details {
-  @include font-face (18px, 24px, 18px, 24px, 16px, 20px);
-  font-weight: 300;
-  color: $color-sapphire;
+.faq__qa-lists li.is-active {
+  button {
+    margin: 0 0 4px;
+
+    @include vp-1365 {
+      margin: 0 0 2px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 20px;
+    }
+  }
+
+  button span {
+    background-color: $color-resolution-blue;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
-.faq__qa-lists summary {
+.faq__qa-lists button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 4px;
-  list-style: none;
-  cursor: pointer;
-
-  @include vp-1365 {
-    margin: 0 0 2px;
-  }
-
-  @include vp-767 {
-    margin: 0 0 20px;
-  }
-}
-
-.faq__qa-lists summary strong {
+  text-align: start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
   @include font-face(24px, 24px, 22px, 22px, 20px, 20px);
+  font-weight: 400;
+  color: $color-sapphire;
 
-  @include vp-767 {
-    max-width: 238px;
-  }
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.faq__qa-lists details span{
+.faq__qa-lists button span{
   position: relative;
   display: flex;
   flex-shrink: 0;
@@ -209,21 +221,12 @@
   }
 }
 
-.faq__qa-lists details[open] span{
-  background-color: $color-resolution-blue;
-
-  &::before {
-    background-color: $color-default-white;
-  }
-
-  &::after {
-    display: none;
-  }
-}
-
-.faq__qa-lists details p {
+.faq__qa-lists li p {
   margin: 0;
   padding: 0 200px 0 0;
+
+  font-weight: 300;
+  color: $color-sapphire;
 
   @include vp-1365 {
     padding: 0 118px 0 0;
