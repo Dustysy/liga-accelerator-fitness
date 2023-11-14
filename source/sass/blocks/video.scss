@@ -4,6 +4,15 @@
   width: 364px;
   height: 228px;
 
+  @include vp-1365 {
+    width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -20,7 +29,6 @@
     z-index: 1;
 
     width: 100%;
-    height: 100%;
     object-fit: cover;
   }
 

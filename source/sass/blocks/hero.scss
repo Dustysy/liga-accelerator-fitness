@@ -124,13 +124,16 @@
   }
 }
 
+.hero picture,
 .hero img {
-  width: 100%;
-  height: auto;
+  flex-shrink: 0;
+  width: 500px;
+  height: 524px;
   object-fit: cover;
 
   @include vp-1365 {
     width: 324px;
+    height: 390px;
   }
 
   @include vp-767 {

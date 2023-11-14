@@ -98,6 +98,8 @@
 
 .reviews__content-wrapper img {
   grid-row: 1/span 2;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 
   @include vp-767 {

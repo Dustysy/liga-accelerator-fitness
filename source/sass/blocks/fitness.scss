@@ -99,6 +99,7 @@
 
 .fitness__media-wrapper img {
   object-fit: cover;
+  height: 401px;
 
   @include vp-1365 {
     max-width: 100%;
@@ -106,6 +107,10 @@
 
   @include vp-767 {
     margin: 0 0 40px;
+  }
+
+  &:not(:first-of-type) {
+    height: 228px;
   }
 }
 
@@ -115,7 +120,7 @@
   right: 53%; /*PP*/
 
   @include vp-1365 {
-    top: 55%; /*PP*/
+    top: 75%; /*PP*/
     left: 50%;
     transform: translate(-50%);
 
@@ -127,9 +132,18 @@
     transform: translateY(0);
     width: 100%;
     padding: 0;
+  }
 
-    img {
-      margin: 0;
+  &.video img {
+    height: 228px;
+
+    @include vp-1365 {
+      height: 167px;
+      width: 265px;
+    }
+
+    @include vp-767 {
+      width: 100%;
     }
   }
 }
