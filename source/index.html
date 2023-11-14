@@ -78,6 +78,7 @@
             </div>
 
             <div class="fitness__media-wrapper">
+              <div class="fitness__poster">
               <picture>
                 <source type="image/webp" media="(max-width:1365px)" srcset="./img/fitness-hall/fitness-hall-tablet.webp 1x, ./img/fitness-hall/fitness-hall-tablet@2x.webp 2x">
                 <source type="image/jpg" media="(max-width:1365px)" srcset="./img/fitness-hall/fitness-hall-tablet.jpg 1x, ./img/fitness-hall/fitness-hall-tablet@2x.jpg 2x">
@@ -87,17 +88,18 @@
                 <img src="./img/fitness-hall/fitness-hall.jpg" srcset="./img/fitness-hall/fitness-hall@2x.jpg 2x" width="660" height="401" alt="Множество различных тренажёров в белом тренажёрном зале">
               </picture>
 
-              <div class="fitness__video-container video">
-                <picture>
-                  <source type="image/webp" srcset="./img/fitness-hall/video.webp 1x, ./img/fitness-hall/video.webp 2x">
-                  <img src="./img/fitness-hall/video.jpg" srcset="./img/fitness-hall/video@2x.jpg 2x" width="364" height="228" alt="">
-                </picture>
+              <div class="fitness__video-container video" data-video="parent">
+                <div class="fitness__poster">
+                  <picture>
+                    <source type="image/webp" srcset="./img/fitness-hall/video.webp 1x, ./img/fitness-hall/video.webp 2x">
+                    <img src="./img/fitness-hall/video.jpg" srcset="./img/fitness-hall/video@2x.jpg 2x" width="364" height="228" alt="">
+                  </picture>
+                </div>
 
-                <iframe width="364" height="228"
-                  src="https://www.youtube.com/watch?v=9TZXsZItgdw">
+                <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw?si=5lj4x3_J-3DO3Js6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                 </iframe>
 
-                <button class="video__play-button" type="button">
+                <button class="video__play-button" type="button" data-video="button">
                   <span class="visually-hidden">Проиграть видео</span>
 
                   <svg width="22" height="22">

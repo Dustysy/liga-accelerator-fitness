@@ -1,9 +1,10 @@
-import {initTabs} from './modules/tabs/init-tabs'
-import {initSwiperJury} from './modules/init-jury-swiper';
+import { showVideo } from './modules/video';
+import { initTabs } from './modules/tabs/init-tabs'
+import { initSwiperJury } from './modules/init-jury-swiper';
 import { initAccordions } from './modules/accordion/init-accordion'
 import { initSwiperReview } from './modules/init-review-swiper';
-import {iosVhFix} from './utils/ios-vh-fix';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from './utils/ios-vh-fix';
+import { Form } from './modules/form-validate/form';
 
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    showVideo();
     initTabs();
 
     initSwiperJury();

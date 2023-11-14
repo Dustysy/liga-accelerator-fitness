@@ -34,7 +34,10 @@
     height: 100%;
   }
 
-  &:active {
+  &.is-active {
+
+    img,
+    button,
     &::after {
       display: none;
     }
