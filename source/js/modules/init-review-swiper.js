@@ -1,15 +1,23 @@
 import Swiper from "../vendor/swiper"
 
 const initSwiperReview = () => {
-  if ('[data-swiper="review"]') {
-    new Swiper('[data-swiper="review"]', {
-      slidesPerView: 1,
+  if ('[data-swiper="reviews"]') {
+    new Swiper('[data-swiper="reviews"]', {
       navigation: {
-        nextEl: '[data-review-button="next"]',
-        prevEl: '[data-review-button="prev"]',
+        nextEl: '[data-reviews-button="next"]',
+        prevEl: '[data-reviews-button="prev"]',
       },
 
-      loop: true,
+      breakpoints: {
+        768: {
+          allowTouchMove: true,
+        },
+      },
+
+      slidesPerView: 1,
+      spaceBetween: 30,
+      // loop: false,
+      allowTouchMove: false,
     });
   }
 };

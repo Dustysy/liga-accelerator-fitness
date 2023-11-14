@@ -12,11 +12,13 @@ const initSwiperJury = () => {
 
       breakpoints: {
         1366: {
+          allowTouchMove: false,
           slidesPerView: 4,
           spaceBetween: 40,
         },
 
         768: {
+          allowTouchMove: true,
           slidesPerView: 2,
           spaceBetween: 32,
         },

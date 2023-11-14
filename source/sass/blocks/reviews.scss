@@ -37,6 +37,18 @@
   }
 }
 
+.reviews__swiper {
+  max-width: 560px;
+
+  @include vp-1365 {
+    max-width: 580px;
+  }
+
+  @include vp-767 {
+    max-width: 226px;
+  }
+}
+
 .reviews__content-wrapper {
   position: relative;
 }
@@ -47,7 +59,7 @@
 }
 
 .reviews__content-wrapper ul {
-  margin: 0 40px;
+  margin: 0;
   padding: 0;
   list-style: none;
 

@@ -705,7 +705,7 @@
             <h2>Отзывы</h2>
 
             <div class="reviews__content-wrapper">
-              <button class="reviews__pagination-button pagination-btn pagination-btn--prev" data-review-button="prev" type="button">
+              <button class="reviews__pagination-button pagination-btn pagination-btn--prev" data-reviews-button="prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
 
                 <svg width="16" height="32">
@@ -713,8 +713,25 @@
                 </svg>
               </button>
 
-              <div class="reviews__swiper swiper" data-swiper="review">
+              <div class="reviews__swiper swiper" data-swiper="reviews">
                 <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="./img/reviewer-1.webp 1x, ./img/reviewer-1.webp 2x">
+                      <img src="./img/reviewer-1.jpg" srcset="./img/reviewer-1@2x.jpg 2x" width="80" height="80" alt="">
+                    </picture>
+
+                    <div class="reviews__text-wrapper">
+                      <h3>Анна Орлова</h3>
+                      <p>
+                        «Хожу в Supergym уже больше года. Нравится, что
+                        в клубе всегда чисто, тренажеры обновляют,
+                        персонал дружелюбный. Зал просторный, даже в
+                        вечернее время нет очередей»
+                      </p>
+                    </div>
+                  </li>
+
                   <li class="swiper-slide">
                     <picture>
                       <source type="image/webp" srcset="./img/reviewer-1.webp 1x, ./img/reviewer-1.webp 2x">
@@ -734,7 +751,7 @@
                 </ul>
               </div>
 
-              <button class="reviews__pagination-button pagination-btn pagination-btn--next" data-review-button="next" type="button">
+              <button class="reviews__pagination-button pagination-btn pagination-btn--next" data-reviews-button="next" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
 
                 <svg width="16" height="32">
