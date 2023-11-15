@@ -19,7 +19,7 @@
 .hero__info-container {
   display: grid;
   grid-template-columns: max-content auto;
-  gap: 0 2px;
+  gap: 0 27px;
   margin: 0 70px 0 0;
   padding: 62px 0;
   text-align: end;
@@ -92,7 +92,7 @@
   grid-column: 2/3;
   justify-self: end;
   height: fit-content;
-  width: 100%;
+  width: 93%;
 
   justify-content: center;
   color: $color-default-white;

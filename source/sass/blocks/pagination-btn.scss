@@ -26,7 +26,7 @@
   }
 
   &--prev {
-    left: -40px; /*PP*/
+    left: -76px;
 
     @include vp-1365 {
       left: -33px; /*PP*/
@@ -42,7 +42,7 @@
   }
 
   &--next {
-    right: -40px; /*PP*/
+    right: -76px;
 
     @include vp-1365 {
       right: -33px; /*PP*/

@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
   padding: 40px 103px;
 
@@ -35,7 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px 40px; /*PP*/
-  margin: 0;
+  margin: 0 17px 0 0;
   padding: 0;
   list-style: none;
 
@@ -58,44 +59,42 @@
 
 .page-footer__link {
   position: relative;
-  padding: 4px 9px;
 
   @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
   font-weight: 400;
   color: $color-default-white;
 
-  border: 1px solid transparent;
-
   &::after {
     content: "";
     position: absolute;
-    display: none;
     bottom: 4px;
-    left: 9px;
-    right: 9px;
+    left: 0;
     height: 1px;
-    width: calc(100% - 15px);
-    background-color: $color-default-white;
+    width: 100%;
   }
 
   @include hover {
     &::after {
-      display: flex;
+      background-color: $color-default-white;
     }
   }
 
   @include focus {
-    border-color: $color-default-white;
     outline: none;
 
     &::after {
-      display: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: calc(100% + 10px);
+      width: calc(100% + 20px);
+      border: 1px solid  $color-default-white;
+
+      background-color: transparent;
     }
   }
 
   @include active {
-    border: 1px solid transparent;
-
     &::after {
       display: none;
     }
@@ -103,7 +102,6 @@
 
   &:disabled,
   &--disabled {
-    border: 1px solid transparent;
     opacity: 0.4;
     pointer-events: none;
 

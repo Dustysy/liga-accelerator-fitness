@@ -7,7 +7,7 @@
 .page-header__container {
   display: flex;
   justify-content: space-between;
-  padding: 30px 103px;
+  padding: 30px 103px; /*30px 88px 30px 103px*/
 
   @include vp-1365 {
     padding: 30px 45px;
@@ -48,6 +48,8 @@
   @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
   font-weight: 700;
   color: $color-default-white;
+  text-align: right;
+  letter-spacing: 0.9px;
 
   &::after {
     content: "";

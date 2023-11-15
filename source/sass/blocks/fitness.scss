@@ -18,8 +18,8 @@
 }
 
 .fitness__info-container {
-  width: 33.33%;
-  margin: 0 145px 0 0;
+  width: 30.33%;
+  margin: 0 147px 0 0;
 
   @include vp-1365 {
     width: 100%;
@@ -116,8 +116,8 @@
 
 .fitness__video-container {
   position: absolute;
-  top: 50%;
-  right: 53%; /*PP*/
+  top: 56%;
+  right: 54%;
 
   @include vp-1365 {
     top: 75%; /*PP*/

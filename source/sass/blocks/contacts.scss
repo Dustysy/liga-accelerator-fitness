@@ -12,7 +12,7 @@
 .contacts__container {
   max-width: 960px;
   margin: 0 auto 0 0;
-  padding: 60px 103px;
+  padding: 61px 120px 62px;
 
   @include vp-1365 {
     margin: 0 auto;
@@ -51,7 +51,7 @@
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: 1fr 1fr;
-  gap: 15px 120px;
+  gap: 13px 70px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 49.5%;
     transform: translate(-50%);
     width: 1px;
     height: 100%;
@@ -89,6 +89,7 @@
   &:nth-child(3n),
   &:nth-child(4n) {
     grid-column: 2/3;
+    margin: 0 0 0 33px;
   }
 }
 
@@ -100,6 +101,7 @@
 }
 
 .contacts__text {
+  margin: 0;
   @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
   color: $color-sapphire;
 }
