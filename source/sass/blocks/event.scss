@@ -9,7 +9,7 @@
   padding: 120px 103px 0;
 
   @include vp-1365 {
-    padding: 100px 45px;
+    padding: 100px 45px 0;
   }
 
   @include vp-767 {
@@ -22,14 +22,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-basis: 43%; /*Change PP*/
+  flex-basis: 43%;
   padding: 80px;
 
   background-color:  $color-torch-red;
   color: $color-default-white;
 
   @include vp-1365 {
-    padding: 40px 45px;
+    min-width: 292px;
+    padding: 40px 45px 43px;
   }
 
   @include vp-767 {
@@ -60,7 +61,8 @@
   margin: 0 0 23px;
 
   @include vp-1365 {
-    margin: 0 0 6px;
+    flex-basis: 27%;
+    margin: 0 0 2px;
   }
 
   @include vp-767 {
@@ -74,6 +76,10 @@
 
   &:not(:last-child) {
     margin: 0 0 20px;
+
+    @include vp-1365 {
+      margin: 0 0 8px;
+    }
   }
 
   &::after {
@@ -86,7 +92,7 @@
     background-color: $color-default-white;
 
     @include vp-1365 {
-      top: 24px;
+      left: 0;
     }
 
     @include vp-767 {
@@ -96,12 +102,14 @@
 
   &.event__date {
     &::after {
+      top: 25px;
       width: 72%;
     }
   }
 
   &.event__time {
     &::after {
+      top: 22px;
       width: 102%;
     }
   }
@@ -109,6 +117,14 @@
 
 .event__date-container dt {
   margin: 0 0 12px;
+
+  @include vp-1365 {
+    margin: 0 0 4px;
+  }
+
+  @include vp-767 {
+    top: 20px;
+  }
 
 }
 .event__date-container dd {
@@ -129,6 +145,15 @@
 
     p {
       margin: 0;
+    }
+
+    @include vp-1365 {
+      margin: 1px 0 0 3px;
+      gap: 2px;
+    }
+
+    @include vp-767 {
+      top: 20px;
     }
   }
 }

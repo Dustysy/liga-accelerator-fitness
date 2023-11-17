@@ -47,7 +47,11 @@
 .price-card__title {
   margin: 0 0 7px;
 
-  @include font-face(26px, 26px, 24px, 24px, 22px, 22px)
+  @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
+
+  @include vp-1365 {
+    margin: 0 0 17px;
+  }
 }
 
 .price-card__postscript {

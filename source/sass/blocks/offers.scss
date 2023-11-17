@@ -68,7 +68,7 @@
   margin: 0 0 67px;
 
   @include vp-1365 {
-    margin: 0 0 69px;
+    margin: 0 0 45px;
   }
 
   @include vp-767 {
@@ -173,7 +173,6 @@
     border: none;
 
     @include vp-1365 {
-      grid-template-columns: 33% 66.66%;
       grid-column: 1/span 2;
     }
 
@@ -181,16 +180,23 @@
     }
 
     .offers__info-wrapper {
-      flex-basis: 84%;
+      flex-basis: 61%;
       display: flex;
       flex-direction: column;
       padding:  40px 45px 39px;
+
+      @include vp-1365 {
+        padding: 43px 45px 39px;
+      }
+
+      @include vp-767 {
+      }
 
       h3 {
         margin: 0 0 15px;
 
         @include vp-1365 {
-          margin: 0 0 5px;
+          margin: 0 0 6px;
         }
 
         @include vp-767 {
