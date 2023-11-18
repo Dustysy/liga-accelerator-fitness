@@ -75,15 +75,15 @@
 .free-lesson input {
   vertical-align: middle;
   width: 100%;
-  padding: 0 0 3px;
+  padding: 10px 10px 3px 0;
 
   @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
   font-weight: 400;
   color: $color-default-white;
 
   background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #74819c;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
   &::placeholder {
     color: $color-default-white;
