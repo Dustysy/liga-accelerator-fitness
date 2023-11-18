@@ -110,6 +110,7 @@
   }
 
   @include vp-767 {
+    width: revert-layer;
     margin: 0 0 40px;
     height: 313px;
   }

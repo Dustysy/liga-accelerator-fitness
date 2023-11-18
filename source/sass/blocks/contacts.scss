@@ -139,6 +139,10 @@
   @include hover-focus {
     color: $color-resolution-blue;
     outline: none;
+
+    &::after {
+      display: flex;
+    }
   }
 
   @include active {

@@ -127,7 +127,7 @@
   object-fit: cover;
 
   @include vp-1365 {
-    max-height: 294px;
+    aspect-ratio: 268/294;
   }
 
   @include vp-767 {

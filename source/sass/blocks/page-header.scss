@@ -7,7 +7,7 @@
 .page-header__container {
   display: flex;
   justify-content: space-between;
-  padding: 30px 103px; /*30px 88px 30px 103px*/
+  padding: 30px 103px;
 
   @include vp-1365 {
     padding: 30px 45px;
@@ -18,10 +18,7 @@
   }
 }
 
-.page-header img {
-  width: 120px;
-  height: 26px;
-
+.page-header__logo-link {
   @include hover-focus {
     opacity: 0.6;
     outline: none;
@@ -30,6 +27,11 @@
   @include active {
     opacity: 0.3;
   }
+}
+
+.page-header img {
+  width: 120px;
+  height: 26px;
 
   @include vp-1365 {
     width: 111px;

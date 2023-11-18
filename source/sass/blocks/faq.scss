@@ -184,6 +184,14 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  br {
+    display: none;
+
+    @include vp-1365 {
+      display: flex;
+    }
+  }
 }
 
 .faq__qa-lists button span{

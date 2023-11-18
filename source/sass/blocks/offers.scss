@@ -192,12 +192,13 @@
     }
 
     .offers__info-wrapper {
-      flex-basis: 61%;
+      flex-basis: 84%;
       display: flex;
       flex-direction: column;
       padding:  40px 45px 39px;
 
       @include vp-1365 {
+        flex-basis: 61%;
         padding: 43px 45px 39px;
       }
 
