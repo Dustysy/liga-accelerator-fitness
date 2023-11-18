@@ -20,7 +20,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 15px;
+    padding: 70px 15px 66px;
   }
 }
 
@@ -39,7 +39,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 42px;
+    margin: 0 0 36px;
 
     letter-spacing: 0.96px;
   }
@@ -98,6 +98,10 @@
   &:nth-child(4n) {
     grid-column: 2/3;
     margin: 0 0 0 33px;
+
+    @include vp-767 {
+      margin: -3px 0 0;
+    }
   }
 }
 

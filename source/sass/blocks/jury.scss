@@ -42,12 +42,6 @@
   transform: translateY(-50%);
 }
 
-.jury__swiper {
-  @include vp-767 {
-    margin: 0 19px;
-  }
-}
-
 .jury__list {
   margin: 0;
   padding: 0;
@@ -135,13 +129,17 @@
   @include vp-1365 {
     max-height: 294px;
   }
+
+  @include vp-767 {
+    min-height: 274px;
+  }
 }
 
 .jury__name {
   width: 100%;
   margin: 0 0 8px;
 
-  @include font-face(22px, 22px, 20px, 20px, 18px, 20px);
+  @include font-face(22px, 22px, 20px, 20px, 22px, 22px);
   font-weight: 400;
   color: $color-default-white;
   text-align: center;

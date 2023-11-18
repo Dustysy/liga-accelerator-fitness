@@ -52,11 +52,16 @@
   @include vp-1365 {
     margin: 0 0 17px;
   }
+
+  @include vp-767 {
+    margin: 0 0 14px;
+  }
 }
 
 .price-card__postscript {
   margin: 0 0 69px;
 
+  @include font-face(16px, 24px, 16px, 24px, 14px, 22px);
   font-weight: 300;
 
   @include vp-1365 {
@@ -96,8 +101,11 @@
     margin: 0 0 24px;
   }
 
-  @include vp-767 {
-    margin: 0 0 22px;
+  svg {
+    @include vp-767 {
+      width: 24px;
+      height: 33px;
+    }
   }
 }
 

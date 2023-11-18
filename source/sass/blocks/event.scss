@@ -66,7 +66,7 @@
   }
 
   @include vp-767 {
-    margin: 0 0 13px;
+    margin: 0 0 11px;
   }
 }
 
@@ -94,16 +94,16 @@
     @include vp-1365 {
       left: 0;
     }
-
-    @include vp-767 {
-      top: 20px;
-    }
   }
 
   &.event__date {
     &::after {
       top: 25px;
       width: 72%;
+
+      @include vp-767 {
+        top: 20px;
+      }
     }
   }
 
@@ -111,6 +111,11 @@
     &::after {
       top: 22px;
       width: 102%;
+
+      @include vp-767 {
+        top: 17px;
+        width: 99%;
+      }
     }
   }
 }
