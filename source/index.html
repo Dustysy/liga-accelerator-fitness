@@ -771,20 +771,27 @@
           <section class="free-lesson">
             <div class="free-lesson__container container">
               <h2 class="free-lesson__title">Бесплатное занятие</h2>
+              <div class="free-lesson__form form" data-form-validate="data-form-validate" data-callback="base">
+                <form action="https://echo.htmlacademy.ru/" method="post" data-form-feedback="data-form-feedback">
+                  <div class="form__inputs">
+                    <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Обязательное поле" data-required="data-required">
+                      <label>
+                        <span class="visually-hidden">Введите имя</span>
+                        <input type="text" name="name" placeholder="Имя" autocomplete="off" required>
+                      </label>
+                    </div>
 
-              <form action="https://echo.htmlacademy.ru/" method="post">
-                <label>
-                  <span class="visually-hidden">Введите имя</span>
-                  <input type="text" name="name" placeholder="Имя" required>
-                </label>
+                    <div class="custom-input" data-validate-type="phone" data-message-base="Обязательное поле" data-required="data-required">
+                      <label>
+                        <span class="visually-hidden">Введите номер телефона</span>
+                        <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
+                      </label>
+                    </div>
+                  </div>
 
-                <label>
-                  <span class="visually-hidden">Введите номер телефона</span>
-                  <input type="number" name="phone" placeholder="Телефон" required>
-                </label>
-
-                <button class="free-lesson__button btn" type="submit">Отправить</button>
-              </form>
+                  <button class="form__button btn" type="submit">Отправить</button>
+                </form>
+              </div>
             </div>
           </section>
 

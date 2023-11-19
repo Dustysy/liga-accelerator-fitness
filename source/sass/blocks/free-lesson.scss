@@ -26,7 +26,7 @@
 }
 
 .free-lesson__title {
-  margin: 0 0 33px;
+  margin: 0 0 22px;
 
   font-family: $ff-alumni-sans;
   @include font-face(54px, 54px, 42px, 42px, 32px, 32px);
@@ -34,131 +34,14 @@
   letter-spacing: 1.62px;
 
   @include vp-1365 {
-    margin: 0 0 36px;
+    margin: 0 0 23px;
 
     letter-spacing: 1.26px;
   }
 
   @include vp-767 {
-    margin: 0 0 42px;
+    margin: 0 0 29px;
 
     letter-spacing: 0.96px;
-  }
-}
-
-.free-lesson form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 38px 30px;
-
-  @include vp-1365 {
-    gap: 30px 63px;
-  }
-
-  @include vp-767 {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-  }
-}
-
-.free-lesson label {
-  margin: 0;
-  width: 100%;
-
-
-  @include vp-767 {
-    margin: 0 0 2px;
-  }
-}
-
-.free-lesson input {
-  vertical-align: middle;
-  width: 100%;
-  padding: 10px 10px 3px 0;
-
-  @include font-face(14px, 22px, 14px, 22px, 14px, 20px,);
-  font-weight: 400;
-  color: $color-default-white;
-
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
-  &::placeholder {
-    color: $color-default-white;
-  }
-
-  &::after {
-    top: -10px;
-    left: -10px;
-    height: calc(100% + 10px);
-    width: 100%;
-    border: 1px solid $color-resolution-blue;
-
-    background-color: transparent;
-  }
-
-  @include hover {
-    &:not(:disabled) {
-      border-bottom: 1px solid $color-default-white;
-    }
-  }
-
-  @include focus {
-    &:not(:disabled){
-      border: 1px solid $color-default-white;
-      outline: none;
-
-      &::placeholder {
-        color: transparent;
-      }
-    }
-
-  }
-
-  @include active {
-    &:not(:disabled){
-      border: 1px solid $color-default-white;
-      outline: none;
-
-      &::placeholder {
-        color: transparent;
-      }
-    }
-  }
-
-  &:disabled {
-    color: rgba(255, 255, 255, 0.4);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    cursor: default;
-  }
-}
-
-.free-lesson__button {
-  display: flex;
-  justify-content: center;
-  grid-column: 1/-1;
-  color: $color-default-white;
-
-  @include hover-focus {
-    &:not(:disabled){
-      background: $color-default-white;
-      color: $color-egyptian-blue;
-      opacity: 1;
-    }
-  }
-
-  @include active {
-    &:not(:disabled){
-      color: $color-sapphire;
-    }
-  }
-
-  &:disabled {
-    color: $color-default-white;
-    border-color: $color-default-white;
-    opacity: 0.5;
-    cursor: default;
   }
 }
