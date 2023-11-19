@@ -1,0 +1,149 @@
+.price-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 58px 70px 58px 71px;
+
+  border:  7px solid transparent;
+
+  &:nth-child(2n) {
+    border-image: linear-gradient(to bottom right, $color-crimson, #00359F);
+    border-image-slice: 1;
+
+    .price-card__button {
+      background: $torch-red-to-cobalt-right;
+      color: $color-default-white;
+      border: 2px solid transparent;
+      border-image: $torch-red-to-cobalt-right;
+      border-image-slice: 1;
+    }
+  }
+
+
+  @include hover-focus {
+    border-image: linear-gradient(to bottom right, $color-crimson, #00359F);
+    border-image-slice: 1;
+    outline: none;
+
+    .price-card__button {
+      background: $torch-red-to-cobalt-right;
+      color: $color-default-white;
+      border: 2px solid transparent;
+      border-image: $torch-red-to-cobalt-right;
+      border-image-slice: 1;
+    }
+  }
+
+
+  @include vp-1365 {
+    padding: 58px 111px;
+  }
+
+  @include vp-767 {
+    padding: 43px 35px;
+  }
+}
+
+.price-card__title {
+  margin: 0 0 7px;
+
+  @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
+
+  @include vp-1365 {
+    margin: 0 0 17px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 14px;
+  }
+}
+
+.price-card__postscript {
+  margin: 0 0 69px;
+
+  @include font-face(16px, 24px, 16px, 24px, 14px, 22px);
+  font-weight: 300;
+
+  @include vp-1365 {
+    margin: 0 0 72px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 62px;
+  }
+}
+
+
+.price-card__price {
+  position: relative;
+  margin: 0 0 35px;
+
+  @include font-face(60px, 150%, 60px, 150%, 48px, 150%);
+  font-weight: 700;
+  color: $color-egyptian-blue;
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    z-index: -1;
+    top: -60%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150%;
+
+    @include font-face(100px, 150%, 100px, 150%, 80px, 150%);
+    font-weight: 700;
+    color: #e8e8e8;
+    text-align: center;
+  }
+
+  @include vp-1365 {
+    margin: 0 0 24px;
+  }
+
+  svg {
+    @include vp-767 {
+      width: 24px;
+      height: 33px;
+    }
+  }
+}
+
+.price-card__button {
+  width: 100%;
+  margin: auto 0 0;
+  padding: 25px 42px;
+
+  color: $color-sapphire;
+  text-align: center;
+  border: 2px solid $color-sapphire;
+
+  @include hover-focus {
+    &:not(:disabled){
+      background: $torch-red-to-cobalt-right;
+      color: $color-default-white;
+      border-color: transparent;
+      border-image: $torch-red-to-cobalt-right;
+      border-image-slice: 1;
+      opacity: 1;
+      outline: 2px solid $color-sapphire; /*Доьавлено, чтобы было видно, что фокус перешел на кнопку*/
+    }
+  }
+
+  @include active {
+    &:not(:disabled){
+      color: rgba(255, 255, 255, 0.7)
+    }
+  }
+
+  &:disabled {
+    color: $color-sapphire;
+    border-color: $color-sapphire;
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  @include vp-1365 {
+    padding: 20px 42px;
+  }
+}

@@ -1,0 +1,85 @@
+.page-header {
+  width: 100%;
+
+  background: $intro-background;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 103px;
+
+  @include vp-1365 {
+    padding: 30px 45px;
+  }
+
+  @include vp-767 {
+    padding: 16px 15px;
+  }
+}
+
+.page-header__logo-link {
+  @include hover-focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
+}
+
+.page-header img {
+  width: 120px;
+  height: 26px;
+
+  @include vp-1365 {
+    width: 111px;
+    height: 24px;
+  }
+
+  @include vp-767 {
+    width: 102px;
+    height: 22px;
+  }
+}
+
+.page-header__phone {
+  position: relative;
+
+  @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
+  font-weight: 700;
+  color: $color-default-white;
+  text-align: right;
+  letter-spacing: 0.9px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    display: none;
+    height: 1px;
+    width: 100%;
+
+    background-color: $color-sapphire;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-sapphire;
+
+    &::after {
+      display: flex;
+    }
+  }
+
+  &:disabled {
+    color: $color-ghost-white;
+    opacity: 0.5;
+  }
+}

@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -22,6 +22,34 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
+@import "blocks/data-tabs";
+@import "blocks/accordion";
+@import "blocks/data-accordion";
+@import "blocks/pre-footer-wrapper";
+
+//Elements
+@import "blocks/video";
+@import "blocks/period-pagination";
+@import "blocks/pagination-btn";
+@import "blocks/price-card";
+@import "blocks/form";
+@import "blocks/socials";
+
+//Layout
+@import "blocks/page-header";
+@import "blocks/hero";
+@import "blocks/fitness";
+@import "blocks/subscription";
+@import "blocks/event";
+@import "blocks/jury";
+@import "blocks/features";
+@import "blocks/offers";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/free-lesson";
+@import "blocks/contacts";
+@import "blocks/page-footer";
+
 
 // ---------------------------------
 

@@ -1,0 +1,161 @@
+.video {
+  position: relative;
+
+  width: 364px;
+  height: 228px;
+
+  @include vp-1365 {
+    width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 54, 122, 0.50);
+  }
+
+  img {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    object-fit: cover;
+  }
+
+  iframe {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.is-active {
+
+    img,
+    button,
+    &::after {
+      display: none;
+    }
+
+    iframe {
+      display: flex;
+    }
+  }
+}
+
+.video__play-button {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  background: $torch-red-to-cobalt-right;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  svg {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-default-white;
+  }
+
+  &::after {
+    content: "";
+    z-index: 3;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100px;
+    height: 100px;
+    border: 2px solid $color-torch-red;
+    opacity: 0.2;
+
+    border-radius: 50%;
+  }
+
+  @include hover-focus {
+    background: none;
+    background-color: $color-default-white;
+
+    svg {
+      color: $color-sapphire;
+    }
+
+    &::after {
+      border-color: $color-sapphire;
+    }
+  }
+
+  @include active {
+    width: 37px;
+    height: 37px;
+
+    background: none;
+    background-color: $color-default-white;
+
+    svg {
+      color: $color-sapphire;
+    }
+
+    &::after {
+      border-color: $color-sapphire;
+    }
+  }
+
+  &:disabled {
+    background: none;
+    background-color: $color-default-white;
+    opacity: 0.4;
+
+    svg {
+      color: $color-sapphire;
+    }
+
+    &::after {
+      border-color: $color-sapphire;
+    }
+  }
+
+  @include vp-1365 {
+    width: 52px;
+    height: 52px;
+
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    &::after {
+      width: 72px;
+      height: 72px;
+    }
+  }
+}
