@@ -1,22 +1,23 @@
 [data-tabs="parent"] {
   overflow: hidden;
+}
 
-  &.no-transition {
-    > [data-tabs="control"],
-    > [data-tabs="content"],
-    > [data-tabs="element"] {
-      transition: none;
-    }
-  }
-
-  &.no-transition-global {
-    [data-tabs="control"],
-    [data-tabs="content"],
-    [data-tabs="element"] {
-      transition: none;
-    }
+[data-tabs="parent"].no-transition {
+  > [data-tabs="control"],
+  > [data-tabs="content"],
+  > [data-tabs="element"] {
+    transition: none;
   }
 }
+
+[data-tabs="parent"].no-transition-global {
+  [data-tabs="control"],
+  [data-tabs="content"],
+  [data-tabs="element"] {
+    transition: none;
+  }
+}
+
 
 [data-tabs="parent"] [data-tabs="content"] {
   position: relative;
@@ -24,10 +25,8 @@
 
 [data-tabs="element"] {
   position: absolute;
-
   visibility: hidden;
   opacity: 0;
-
   transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
 }
 
@@ -35,13 +34,11 @@
   position: static;
   visibility: visible;
   opacity: 1;
-
   transition: none;
 }
 
 [data-tabs="element"].is-active {
   z-index: 1;
-
   visibility: visible;
   opacity: 1;
 }

@@ -6,12 +6,12 @@
   position: absolute;
   top: 39px;
   left: 0;
+}
 
-  &.is-invalid {
-    @include font-face(14px, 22px, 14px, 22px, 14px, 20px);
-    color: $color-crimson;
-  }
+.custom-input .input-message.is-invalid {
+  @include font-face(14px, 22px, 14px, 22px, 14px, 20px);
 
+  color: $color-crimson;
 }
 
 .custom-input.is-invalid input {

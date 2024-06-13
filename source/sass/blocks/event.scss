@@ -1,5 +1,6 @@
 .event {
   @include font-face (18px, 24px, 18px, 24px, 16px, 20px);
+
   font-weight: 300;
 }
 
@@ -24,8 +25,7 @@
   justify-content: space-between;
   flex-basis: 43%;
   padding: 80px;
-
-  background-color:  $color-torch-red;
+  background-color: $color-torch-red;
   color: $color-default-white;
 
   @include vp-1365 {
@@ -41,18 +41,16 @@
 .event__title {
   flex-basis: 50%;
   margin: 0;
-
   font-family: $ff-alumni-sans;
+
   @include font-face(82px, 76px, 48px, 46px, 48px, 46px);
+
   font-weight: 600;
   letter-spacing: 2.46px;
   text-transform: uppercase;
 
   @include vp-1365 {
     letter-spacing: 1.44px;
-  }
-
-  @include vp-767 {
   }
 }
 
@@ -85,37 +83,36 @@
   &::after {
     content: "";
     position: absolute;
-    top: 30px; /*PP*/
+    top: 29px;
     left: -2px;
     height: 1px;
-
     background-color: $color-default-white;
 
     @include vp-1365 {
+      top: 24px;
       left: 0;
     }
   }
+}
 
-  &.event__date {
-    &::after {
-      top: 25px;
-      width: 72%;
+.event__date-container .event__date {
+  &::after {
+    width: 72%;
 
-      @include vp-767 {
-        top: 20px;
-      }
+    @include vp-767 {
+      top: 20px;
     }
   }
+}
 
-  &.event__time {
-    &::after {
-      top: 22px;
-      width: 102%;
 
-      @include vp-767 {
-        top: 17px;
-        width: 99%;
-      }
+.event__date-container .event__time {
+  &::after {
+    width: 102%;
+
+    @include vp-767 {
+      top: 17px;
+      width: 99%;
     }
   }
 }
@@ -130,27 +127,26 @@
   @include vp-767 {
     top: 20px;
   }
-
 }
+
 .event__date-container dd {
   display: flex;
   margin: 0;
 
   @include font-face (40px, 40px, 24px, 24px, 24px, 24px);
+
   font-weight: 700;
 
-  span {
+  p {
     display: flex;
     flex-direction: column;
     gap: 5px;
     max-width: 60%;
     margin: 4px 0 0 4px;
-    @include font-face (14px, 14px, 10px, 10px, 10px, 10px);
-    font-weight: 400;
 
-    p {
-      margin: 0;
-    }
+    @include font-face (14px, 14px, 10px, 10px, 10px, 10px);
+
+    font-weight: 400;
 
     @include vp-1365 {
       margin: 1px 0 0 3px;
@@ -187,7 +183,7 @@
   color: $color-default-white;
 
   @include hover-focus {
-    &:not(:disabled){
+    &:not(:disabled) {
       background: $color-default-white;
       color: $color-egyptian-blue;
       opacity: 1;
@@ -195,7 +191,7 @@
   }
 
   @include active {
-    &:not(:disabled){
+    &:not(:disabled) {
       color: $color-sapphire;
     }
   }
@@ -208,7 +204,7 @@
   }
 
   @include vp-1365 {
-    padding: 20px 50px;
+    padding: 20px 10px;
   }
 
   @include vp-767 {

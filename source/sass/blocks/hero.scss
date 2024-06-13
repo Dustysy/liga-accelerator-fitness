@@ -19,14 +19,14 @@
 .hero__info-container {
   display: grid;
   grid-template-columns: max-content auto;
-  gap: 0 27px;
+  gap: 0 24px;
   margin: 0 70px 0 0;
   padding: 62px 0;
   text-align: end;
 
   @include vp-1365 {
-    gap: 0 30px;
-    margin: 0 30px 0 0;
+    gap: 0 28px;
+    margin: 0 35px 0 0;
     padding: 31px 0;
   }
 
@@ -40,9 +40,11 @@
 
 .hero__city {
   grid-column: 2/3;
-  margin: 0 0 10px;
+  margin: 0 -5px 10px 0;
   font-family: $ff-alumni-sans;
+
   @include font-face(54px, 54px, 42px, 42px, 32px, 32px);
+
   font-weight: 600;
   letter-spacing: 1.62px;
   text-transform: uppercase;
@@ -53,7 +55,6 @@
 
   @include vp-767 {
     margin: 0 0 14px;
-
     letter-spacing: 0.96px;
   }
 }
@@ -62,22 +63,20 @@
   grid-column: 2/3;
   margin: 0 0 50px;
   font-family: $ff-alumni-sans;
-  @include font-face(92px, 110px, 72px, 86px, 62px, 70px);
-  font-weight: 800;
-  text-transform: uppercase;
 
+  @include font-face(92px, 110px, 72px, 86px, 62px, 70px);
+
+  text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 4.6px;
 
   @include vp-1365 {
-    margin: 0 0 48px;
-
+    margin: -2px -5px 48px 0;
     letter-spacing: normal;
   }
 
   @include vp-767 {
     margin: 0 0 60px;
-
     letter-spacing: 1.86px;
   }
 }
@@ -100,20 +99,23 @@
 
 .hero__list-item {
   @include font-face(14px, 22px, 14px, 22px, 14px, 20px);
+
+  font-weight: 400;
 }
 
 .hero__button {
   grid-column: 2/3;
   justify-self: end;
+  justify-content: center;
   height: fit-content;
   width: 93%;
+  padding: 24px 29px;
 
-  justify-content: center;
   color: $color-default-white;
   text-align: center;
 
   @include hover-focus {
-    &:not(:disabled){
+    &:not(:disabled) {
       background: $color-default-white;
       color: $color-egyptian-blue;
       opacity: 1;
@@ -121,7 +123,7 @@
   }
 
   @include active {
-    &:not(:disabled){
+    &:not(:disabled) {
       color: $color-sapphire;
     }
   }
@@ -135,6 +137,7 @@
 
   @include vp-1365 {
     width: 100%;
+    padding: 19px 29px;
   }
 
   @include vp-767 {

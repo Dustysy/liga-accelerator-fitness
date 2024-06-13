@@ -23,10 +23,11 @@
 
 .faq__container h2 {
   grid-column: 1/-1;
-  margin: 0 0 51px;
-
+  margin: 2px 0 52px;
   font-family: $ff-alumni-sans;
+
   @include font-face(54px, 54px, 42px, 42px, 32px, 32px);
+
   letter-spacing: 1.62px;
   font-weight: 600;
   color: $color-sapphire;
@@ -34,13 +35,11 @@
 
   @include vp-1365 {
     margin: 0 0 10px;
-
     letter-spacing: 1.26px;
   }
 
   @include vp-767 {
     margin: 2px 0 7px;
-
     letter-spacing: 0.96px;
   }
 }
@@ -72,31 +71,23 @@
   padding: 17px 10px;
 
   @include font-face(18px, 18px, 18px, 18px, 16px, 16px);
+
   font-weight: 400;
   color: $color-sapphire;
-
   background-color: transparent;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   cursor: pointer;
 
-  &.is-active {
-    background: $torch-red-to-cobalt-right;
-    color: $color-default-white;
-    border: 1px solid transparent;
-    border-image: $torch-red-to-cobalt-right;
-    border-image-slice: 1;
-  }
-
   @include hover-focus {
-    &:not(:disabled){
+    &:not(:disabled) {
       border-color: $color-sapphire;
       outline: none;
     }
   }
 
   @include active {
-    &:not(:disabled){
-      color: rgba(255, 255, 255, 0.7)
+    &:not(:disabled) {
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 
@@ -117,6 +108,14 @@
   }
 }
 
+.faq__controls-wrapper button.is-active {
+  background: $torch-red-to-cobalt-right;
+  color: $color-default-white;
+  border: 1px solid transparent;
+  border-image: $torch-red-to-cobalt-right;
+  border-image-slice: 1;
+}
+
 .faq__qa-lists {
   width: 100%;
 }
@@ -130,11 +129,10 @@
 
 .faq__qa-lists li {
   padding: 25px 0;
-
-  border-bottom: 1px solid rgba(28, 51, 116, 0.20);
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
   &:first-child {
-    border-top: 1px solid rgba(28, 51, 116, 0.20);
+    border-top: 1px solid rgba(28, 51, 116, 0.2);
   }
 
   @include vp-767 {
@@ -155,7 +153,7 @@
     }
   }
 
-  button span {
+  span {
     background-color: $color-resolution-blue;
 
     &::before {
@@ -178,9 +176,9 @@
   padding: 0;
 
   @include font-face(24px, 24px, 22px, 22px, 20px, 20px);
+
   font-weight: 400;
   color: $color-sapphire;
-
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -194,14 +192,13 @@
   }
 }
 
-.faq__qa-lists button span{
+.faq__qa-lists button span {
   position: relative;
   display: flex;
   flex-shrink: 0;
   width: 40px;
   height: 40px;
   margin: 0 0 0 22px;
-
   border: 1px solid $color-resolution-blue;
   border-radius: 50%;
 
@@ -212,7 +209,6 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
     height: 1px;
     width: 20px;
     background-color: $color-resolution-blue;
@@ -237,6 +233,7 @@
   padding: 0 201px 0 0;
 
   @include font-face(18px, 24px, 18px, 24px, 16px, 20px);
+
   font-weight: 300;
   color: $color-sapphire;
 

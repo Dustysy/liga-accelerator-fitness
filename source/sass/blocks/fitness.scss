@@ -25,7 +25,6 @@
     width: 100%;
     margin: 0 0 36px;
     padding: 0 88px;
-
     text-align: center;
   }
 
@@ -37,22 +36,21 @@
 }
 
 .fitness__info-container h2 {
-  margin: 0 0 25px;
-
+  margin: -4px 0 28px;
   font-family: $ff-alumni-sans;
+
   @include font-face(54px, 54px, 42px, 42px, 32px, 32px);
+
   font-weight: 600;
   letter-spacing: 1.62px;
 
   @include vp-1365 {
     margin: 0 0 20px;
-
     letter-spacing: 1.26px;
   }
 
   @include vp-767 {
     margin: 0 0 13px;
-
     letter-spacing: 0.96px;
   }
 }
@@ -62,6 +60,7 @@
   margin: 0 0 95px;
 
   @include font-face(22px, 22px, 20px, 20px, 18px, 20px);
+
   font-weight: 400;
 
   @include vp-1365 {
@@ -81,6 +80,7 @@
 
   @include vp-1365 {
     margin: 0;
+
     &:last-child {
       display: none;
     }
@@ -129,7 +129,6 @@
     top: 61%;
     left: 50%;
     transform: translate(-50%);
-
     max-width: 100%;
   }
 
@@ -139,17 +138,17 @@
     width: 100%;
     padding: 0;
   }
+}
 
-  &.video img {
-    height: 228px;
+.fitness__video-container.video img {
+  height: 228px;
 
-    @include vp-1365 {
-      height: 167px;
-      width: 265px;
-    }
+  @include vp-1365 {
+    height: 167px;
+    width: 265px;
+  }
 
-    @include vp-767 {
-      width: 100%;
-    }
+  @include vp-767 {
+    width: 100%;
   }
 }
