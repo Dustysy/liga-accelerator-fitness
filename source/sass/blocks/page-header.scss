@@ -1,6 +1,5 @@
 .page-header {
   width: 100%;
-
   background: $intro-background;
 }
 
@@ -48,6 +47,7 @@
   position: relative;
 
   @include font-face(26px, 26px, 24px, 24px, 22px, 22px);
+
   font-weight: 700;
   color: $color-default-white;
   text-align: right;
@@ -61,7 +61,6 @@
     display: none;
     height: 1px;
     width: 100%;
-
     background-color: $color-sapphire;
   }
 

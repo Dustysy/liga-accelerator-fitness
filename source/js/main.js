@@ -1,7 +1,7 @@
 import { showVideo } from './modules/video';
-import { initTabs } from './modules/tabs/init-tabs'
+import { initTabs } from './modules/tabs/init-tabs';
 import { initSwiperJury } from './modules/init-jury-swiper';
-import { initAccordions } from './modules/accordion/init-accordion'
+import { initAccordions } from './modules/accordion/init-accordion';
 import { initSwiperReview } from './modules/init-review-swiper';
 import { iosVhFix } from './utils/ios-vh-fix';
 import { Form } from './modules/form-validate/form';

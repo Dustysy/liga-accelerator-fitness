@@ -3,11 +3,10 @@
   flex-direction: column;
   align-items: center;
   padding: 58px 70px 58px 71px;
-
-  border:  7px solid transparent;
+  border: 7px solid transparent;
 
   &:nth-child(2n) {
-    border-image: linear-gradient(to bottom right, $color-crimson, #00359F);
+    border-image: linear-gradient(to bottom right, $color-crimson, #00359f);
     border-image-slice: 1;
 
     .price-card__button {
@@ -21,7 +20,7 @@
 
 
   @include hover-focus {
-    border-image: linear-gradient(to bottom right, $color-crimson, #00359F);
+    border-image: linear-gradient(to bottom right, $color-crimson, #00359f);
     border-image-slice: 1;
     outline: none;
 
@@ -62,6 +61,7 @@
   margin: 0 0 69px;
 
   @include font-face(16px, 24px, 16px, 24px, 14px, 22px);
+
   font-weight: 300;
 
   @include vp-1365 {
@@ -79,6 +79,7 @@
   margin: 0 0 35px;
 
   @include font-face(60px, 150%, 60px, 150%, 48px, 150%);
+
   font-weight: 700;
   color: $color-egyptian-blue;
 
@@ -92,6 +93,7 @@
     width: 150%;
 
     @include font-face(100px, 150%, 100px, 150%, 80px, 150%);
+
     font-weight: 700;
     color: #e8e8e8;
     text-align: center;
@@ -113,26 +115,25 @@
   width: 100%;
   margin: auto 0 0;
   padding: 25px 42px;
-
   color: $color-sapphire;
   text-align: center;
   border: 2px solid $color-sapphire;
 
   @include hover-focus {
-    &:not(:disabled){
+    &:not(:disabled) {
       background: $torch-red-to-cobalt-right;
       color: $color-default-white;
       border-color: transparent;
       border-image: $torch-red-to-cobalt-right;
       border-image-slice: 1;
       opacity: 1;
-      outline: 2px solid $color-sapphire; /*Доьавлено, чтобы было видно, что фокус перешел на кнопку*/
+      outline: 2px solid $color-sapphire; /* Доьавлено, чтобы было видно, что фокус перешел на кнопку */
     }
   }
 
   @include active {
-    &:not(:disabled){
-      color: rgba(255, 255, 255, 0.7)
+    &:not(:disabled) {
+      color: rgba(255, 255, 255, 0.7);
     }
   }
 

@@ -2,7 +2,6 @@
   display: inline-flex;
   justify-content: center;
   padding: 25px 54px;
-
   font-family: $ff-roboto-condensed;
   font-size: $fz-btn-desktop-medium;
   line-height: $lh-btn-desktop-medium;
@@ -11,14 +10,12 @@
   color: $color-default-black;
   text-align: center;
   text-transform: uppercase;
-
   background-color: transparent;
   border: 2px solid $color-default-white;
   cursor: pointer;
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 

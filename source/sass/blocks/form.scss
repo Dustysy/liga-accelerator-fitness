@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 38px 30px;
-
   margin: 0 0 38px;
 
   @include vp-1365 {
@@ -34,9 +33,9 @@
   padding: 10px 10px 3px 0;
 
   @include font-face(14px, 22px, 16px, 24px, 14px, 22px,);
+
   font-weight: 300;
   color: $color-default-white;
-
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -51,7 +50,6 @@
     height: calc(100% + 10px);
     width: 100%;
     border: 1px solid $color-resolution-blue;
-
     background-color: transparent;
   }
 
@@ -62,7 +60,7 @@
   }
 
   @include focus {
-    &:not(:disabled){
+    &:not(:disabled) {
       border: 1px solid $color-default-white;
       outline: none;
 
@@ -70,11 +68,10 @@
         color: transparent;
       }
     }
-
   }
 
   @include active {
-    &:not(:disabled){
+    &:not(:disabled) {
       border: 1px solid $color-default-white;
       outline: none;
 
@@ -102,7 +99,7 @@
   }
 
   @include hover-focus {
-    &:not(:disabled){
+    &:not(:disabled) {
       background: $color-default-white;
       color: $color-egyptian-blue;
       opacity: 1;
@@ -110,7 +107,7 @@
   }
 
   @include active {
-    &:not(:disabled){
+    &:not(:disabled) {
       color: $color-sapphire;
     }
   }

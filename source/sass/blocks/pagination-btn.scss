@@ -1,13 +1,11 @@
 .pagination-btn {
   position: absolute;
-
   display: flex;
   align-items: center;
   justify-content: center;
   width: 56px;
   height: 56px;
   padding: 0;
-
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -19,6 +17,7 @@
   @include vp-767 {
     width: 26px;
     height: 26px;
+
     svg {
       width: 10px;
       height: 19px;
@@ -29,7 +28,7 @@
     left: -76px;
 
     @include vp-767 {
-      left: -37px; /*PP*/
+      left: -37px; /* PP */
     }
 
     svg {
@@ -41,7 +40,7 @@
     right: -76px;
 
     @include vp-767 {
-      right: -37px; /*PP*/
+      right: -37px; /* PP */
     }
   }
 
@@ -60,15 +59,14 @@
 
   &:disabled {
     @include hover-focus {
-    background-color: transparent;
-    border: none;
-    cursor: default;
+      background-color: transparent;
+      border: none;
+      cursor: default;
 
-    svg {
-      stroke: $color-sapphire;
-      opacity: 0.3;
-    }
-
+      svg {
+        stroke: $color-sapphire;
+        opacity: 0.3;
+      }
     }
 
     @include active {
